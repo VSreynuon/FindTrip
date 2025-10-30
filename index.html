@@ -1,29 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Trip</title>
     <!-- link css  style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/Bootstrap/bootstrap.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-     <!-- Animation -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
 </head>
+
 <body>
-    
-   <h1>Welcome to Find Trip</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top z-3">
+            <div class="container">
+                <a class="navbar-brand text-white fs-4" href="#">ស្វែងរកកន្លែងកំសាន្ត</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ខេត្ត
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ខេត្ត​ កំពង់ចាម</a></li>
+                                <li><a class="dropdown-item" href="#">ខេត្ត​ សៀមរាប</a></li>
+                                <li><a class="dropdown-item" href="#">ខេត្ត​ កំពង់ធំ</a></li>
+                                <li><a class="dropdown-item" href="#">ខេត្ត​ ត្បូងឃ្មុំ</a></li>
+                                <li><a class="dropdown-item" href="#">ខេត្ត​ កំពត</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">អំពីយើង</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="btn btn-signin">ចូលគណនី</button>
+                        <a href="signup.html"><button class="btn btn-signup">បង្កើតគណនី</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-baner position-relative">
+                            <!-- HTML -->
+                            <div class="d-flex justify-content-center align-items-center position-absolute"
+                                style="margin-top: 360px;left: 28%; ">
+                                <div
+                                    class="card-blur d-flex justify-content-center align-items-center text-center position-relative">
+                                    <div class="content">
+                                        <h4 class="fs-1 text-white fw-bold">
+                                            សូមស្វាគមន៍មកកាន់ប្រទេសកម្ពុជា
+                                        </h4>
+
+                                        <form action="" class="py-3 w-75 m-auto">
+                                            <input type="search" class="form-control p-2 fs-5" placeholder="ស្វែងរក">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row g-2" style="width: 50%;">
+                    <!-- <div class="d-flex align-items-center justify-content-center w-50"> -->
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body card-a">
+                                <div class="text-center">
+                                    <h4 class="card-title fs-3">កន្លែងកំសាន្ត</h4>
+                                    <p​​ class="card-text fs-4">៨០០​ កន្លែង</p​​>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-body card-b">
+                                <div class="text-center">
+                                    <h4 class="card-title fs-3">ចំនួនអ្នកទស្សនា</h4>
+                                    <p class="card-text fs-4">២០​ ពាន់នាក់</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <div class="row g-4">
+                    <h4​ class="fs-2 fw-medium mb-2">កន្លែងកំសាន្តពេញនិយម</h4​>
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="assets/img/card-img/1.jpg" alt="" width="100%" class="p-4">
+                            <div class="card-body">
+                                <h4 class="card-title fw-semibold">ប្រាសាទអង្គវត្ត</h4>
+                                <p class="card-text fs-5 fw-medium">ប្រាសាទអង្គរវត្ត ជាប្រាសាទដែលមានប្រជាប្រិយបំផុតនៅកម្ពុជា
+                                    ហើយជាស្នាដៃស្ថាបត្យកម្មដ៏អស្ចារ្យនៃអាណាចក្រខ្មែរ។
+                                    ប្រាសាទនេះត្រូវបានសង់ឡើងនៅសតវត្សទី១២
+                                    ដោយព្រះបាទសូរ្យវរ្ម័នទី២ ដើម្បីឧទ្ទិសដល់ព្រះវិស្ណុ (Vishnu) តាមប្រពៃណីសាសនាហិណ្ឌូ។
+                                </p>
+                                <button​ class="btn btn-signin"><i class="bi bi-book"></i> អានលម្អិត</button​>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
+                            <div class="card-body">
+                                <h4>កំពង់ចាម</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
+                            <div class="card-body">
+                                <h4>កំពង់ចាម</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
+                            <div class="card-body">
+                                <h4>កំពង់ចាម</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
+                            <div class="card-body">
+                                <h4>កំពង់ចាម</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <h4>Recomment</h4>
+            </div>
+        </section>
+    </main>
 
     <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script> AOS.init(); </script>
 </body>
+
 </html>
