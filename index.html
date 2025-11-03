@@ -17,28 +17,95 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .search-container {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+
+        .search-container input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .search-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #45a049;
+        }
+
+        .search-button svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .results {
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            padding: 15px;
+        }
+
+        .result-item {
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+    </style>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top z-3">
+        <nav class="navbar navbar-expand-lg shadow-lg fixed-top p-1 ">
             <div class="container">
-                <a class="navbar-brand text-white fs-4" href="#">ស្វែងរកកន្លែងកំសាន្ត</a>
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand fs-4 text-white" href="#"><img src="assets/img/logo-brand.jpg" alt="logo"
+                            width="100%" class="rounded-circle" style="width: 80px; height: 80px;"></a>
+                    <h4 class="mb-0 text-white">ស្វែងរកកន្លែងកំសាន្ត</h4>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">ទំព័រដើម</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">ទំព័រដើម</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 ខេត្ត
                             </a>
                             <ul class="dropdown-menu">
@@ -50,39 +117,120 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">ទំនាក់ទំនង</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">ទំនាក់ទំនង</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">អំពីយើង</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">អំពីយើង</a>
                         </li>
                     </ul>
-                    <div>
-                        <button class="btn btn-signin">ចូលគណនី</button>
-                        <button class="btn btn-signup">បង្កើតគណនី</button>
+                    <div class="">
+                        <a href="" class=""><button type="button"
+                                class="btn btn-signin fw-semibold">ចូលគណនី</button></a>
+                        <a href="" class=""><button type="button"
+                                class="btn btn-signup fw-semibold ms-2">បង្កើតគណនី</button></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="mt-5">
+        <section style="margin-top: 100px ">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="hero-baner position-relative">
-                            <!-- HTML -->
-                            <div class="d-flex justify-content-center align-items-center position-absolute"
-                                style="margin-top: 360px;left: 28%; ">
-                                <div
-                                    class="card-blur d-flex justify-content-center align-items-center text-center position-relative">
-                                    <div class="content">
-                                        <h4 class="fs-1 text-white fw-bold">
-                                            សូមស្វាគមន៍មកកាន់ប្រទេសកម្ពុជា
-                                        </h4>
-
-                                        <form action="" class="py-3 w-75 m-auto">
-                                            <input type="search" class="form-control p-2 fs-5" placeholder="ស្វែងរក">
-                                        </form>
+                        <div class="card p-4 border-0 shadow-sm">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card border-0">
+                                        <div class="card-body">
+                                            <div class="p-4">
+                                                <h4 class="card-title fs-1 fw-bold">
+                                                    សូមស្វាគមន៍មកកាន់ប្រទេសកម្ពុជា
+                                                </h4>
+                                                <p class="card-text fs-5 text-muted">ប្រទេសកម្ពុជា
+                                                    ជាទីកន្លែងទេសចរណ៍ដ៏អស្ចារ្យមួយ ដែលពោរពេញដោយប្រវត្តិសាស្រ្តវ័យជាច្រើន
+                                                    សម្បូរទៅដោយវប្បធម៌ និងទេសភាពធម្មជាតិដ៏ស្រស់ស្អាត។
+                                                    ប្រជាជនកម្ពុជាមានភាពស្និទ្ធស្នាល អធ្យាស្រ័យ
+                                                    និងសប្បាយរីករាយក្នុងការស្វាគមន៍ភ្ញៀវទេសចរទាំងក្នុង និងក្រៅប្រទេស។
+                                                </p>
+                                                <div class="search-container mt-5" id="searchBox">
+                                                    <input type="text" id="searchInput" placeholder="Type to search...">
+                                                    <button class="search-button" id="searchBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
+                                                            6.5 6.5 0 109.5 16c1.61 0 3.09-.59 
+                                                             4.23-1.57l.27.28v.79l5 4.99L20.49 
+                                                         19l-4.99-5zm-6 0C8.01 14 6 11.99 
+                                                            6 9.5S8.01 5 10.5 5 15 7.01 15 
+                                                         9.5 12.99 14 10.5 14z" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- <div> -->
+                                            <div class="row p-4">
+                                                <div class="col-6">
+                                                    <div style="width: 80%;">
+                                                        <a href="https://maps.app.goo.gl/cJsdnignUYLBKpWm7"><img
+                                                                src="assets/img/cam-map.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card border-0">
+                                                        <div class="row g-2">
+                                                            <div class="col-12">
+                                                                <div class="card border-0 shadow-sm bg-success-subtle">
+                                                                    <div class="card-body">
+                                                                        <div class="text-center">
+                                                                            <h4​
+                                                                                class="card-tile fw-bold fs-3 text-success">
+                                                                                កន្លែងកំសាន្ត</h4​>
+                                                                            <p class="card-text fs-4 fw-medium">345</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="card border-0 shadow-sm bg-danger-subtle">
+                                                                    <div class="card-body">
+                                                                        <div class="text-center">
+                                                                            <h4​
+                                                                                class="card-tile fw-bold fs-3 text-success">
+                                                                                ចំនួនអ្នកមើល</h4​>
+                                                                            <p class="card-text fs-4 fw-medium">345</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card border-0">
+                                        <div class="" style="margin-top: 6%; height: 580px;">
+                                            <!-- Swiper -->
+                                            <div class="swiper heroSwiper rounded-2">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
+                                                            alt=""></div>
+                                                    <div class="swiper-slide"><img src="assets/img/card-img/1.jpg"
+                                                            alt=""></div>
+                                                    <div class="swiper-slide"><img
+                                                            src="https://images.unsplash.com/photo-1708885819844-aeb2b90886aa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQzfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
+                                                            alt=""></div>
+                                                    <div class="swiper-slide"><img
+                                                            src="https://cf.bstatic.com/xdata/images/hotel/square600/492409391.webp?k=86384505df217d6de0d2a321e138ac0a975303d23609a176a674ae9d775112a7&o="
+                                                            alt=""></div>
+                                                </div>
+                                                <!-- <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div> -->
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -92,101 +240,448 @@
             </div>
             </div>
         </section>
-        <section class="mt-5">
+        <section style="margin-top: 30px;">
             <div class="container">
-                <div class="row g-2" style="width: 50%;">
-                    <!-- <div class="d-flex align-items-center justify-content-center w-50"> -->
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-body card-a">
-                                <div class="text-center">
-                                    <h4 class="card-title fs-3">កន្លែងកំសាន្ត</h4>
-                                    <p​​ class="card-text fs-4">៨០០​ កន្លែង</p​​>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card p-4 border-0 shadow-sm bg-body-secondary">
+                            <div class="row g-4">
+                                <h4​ class="fs-2 fw-medium mb-2">កន្លែងកំសាន្តពេញនិយម</h4​>
+                                <div class="col-4">
+                                    <div class="card card-hover">
+                                        <div class="card-img position-relative overflow-hidden">
+                                            <img src="assets/img/card-img/1.jpg" alt="" width="100%"
+                                                class="p-4  card-image position-absolute" style="object-fit: cover;">
+                                            <!-- Swiper -->
+                                            <div class="swiper mySwiper position-absolute">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
+                                                            alt="" style="height: 438px;"></div>
+                                                    <div class="swiper-slide"><img src="assets/img/card-img/1.jpg"
+                                                            alt="" style="height: 438px;"></div>
+                                                    <div class="swiper-slide"><img src="assets/img/card-img/img-3.avif"
+                                                            alt="" style="height: 438px;"></div>
+                                                    <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
+                                                            alt="" style="height: 438px;"></div>
+                                                </div>
+                                                <!-- <div class="swiper-button-next"></div>
+                                                        <div class="swiper-button-prev"></div> -->
+                                                <div class="swiper-pagination"></div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title fw-semibold"><button type="button" class="btn"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <i class="bi bi-geo-alt-fill fs-4 text-danger"></i>
+                                                </button>ប្រាសាទអង្គវត្ត</h4>
+                                            <p class="card-text fs-5 fw-medium text-limit mb-4">ប្រាសាទអង្គរវត្ត
+                                                ជាប្រាសាទដែលមានប្រជាប្រិយបំផុតនៅកម្ពុជា
+                                                ហើយជាស្នាដៃស្ថាបត្យកម្មដ៏អស្ចារ្យនៃអាណាចក្រខ្មែរ។
+                                                ប្រាសាទនេះត្រូវបានសង់ឡើងនៅសតវត្សទី១២
+                                                ដោយព្រះបាទសូរ្យវរ្ម័នទី២ ដើម្បីឧទ្ទិសដល់ព្រះវិស្ណុ (Vishnu)
+                                                តាមប្រពៃណីសាសនាហិណ្ឌូ។
+                                            </p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <button​ class="btn btn-ant"><i class="bi bi-book"></i> អានលម្អិត
+                                                </button​>
+                                                <button type="button"
+                                                    class="btn rounded-circle bg-success-subtle d-flex justify-content-center align-items-center"
+                                                    data-bs-toggle="modal" data-bs-target="#menuModal"
+                                                    style="width: 50px; height: 50px;">
+                                                    <i class="fa-solid fa-house fs-4 text-success"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card">
-                            <div class="card-body card-b">
-                                <div class="text-center">
-                                    <h4 class="card-title fs-3">ចំនួនអ្នកទស្សនា</h4>
-                                    <p class="card-text fs-4">២០​ ពាន់នាក់</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div> -->
                 </div>
+
             </div>
-        </section>
-        <section class="mt-5">
-            <div class="container">
-                <div class="row g-4">
-                    <h4​ class="fs-2 fw-medium mb-2">កន្លែងកំសាន្តពេញនិយម</h4​>
-                    <div class="col-6">
-                        <div class="card">
-                            <img src="assets/img/card-img/1.jpg" alt="" width="100%" class="p-4">
-                            <div class="card-body">
-                                <h4 class="card-title fw-semibold">ប្រាសាទអង្គវត្ត</h4>
-                                <p class="card-text fs-5 fw-medium">ប្រាសាទអង្គរវត្ត ជាប្រាសាទដែលមានប្រជាប្រិយបំផុតនៅកម្ពុជា
-                                    ហើយជាស្នាដៃស្ថាបត្យកម្មដ៏អស្ចារ្យនៃអាណាចក្រខ្មែរ។
-                                    ប្រាសាទនេះត្រូវបានសង់ឡើងនៅសតវត្សទី១២
-                                    ដោយព្រះបាទសូរ្យវរ្ម័នទី២ ដើម្បីឧទ្ទិសដល់ព្រះវិស្ណុ (Vishnu) តាមប្រពៃណីសាសនាហិណ្ឌូ។
-                                </p>
-                                <button​ class="btn btn-signin"><i class="bi bi-book"></i> អានលម្អិត</button​>
-                            </div>
+            <!-- Modal location-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">ទីតាំង</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="card">
-                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
-                            <div class="card-body">
-                                <h4>កំពង់ចាម</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
-                            <div class="card-body">
-                                <h4>កំពង់ចាម</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
-                            <div class="card-body">
-                                <h4>កំពង់ចាម</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img src="assets/img/hero-banner.jpg" alt="" width="100%">
-                            <div class="card-body">
-                                <h4>កំពង់ចាម</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam?</p>
+                        <div class="modal-body">
+                            <div class="container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3880.9976164977224!2d103.86441077359753!3d13.412474505062267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3110168aea9a272d%3A0x3eaba81157b0418d!2sAngkor%20Wat!5e0!3m2!1sen!2skh!4v1761751971183!5m2!1sen!2skh"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" class="object-fit-cover overflow-hidden"
+                                    width="100%" height="300px"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="mt-5">
-            <div class="container">
-                <h4>Recomment</h4>
+            <!-- Modal menu-->
+            <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="menuModalLabel">ព័ត៌មានទេសចរណ៍</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="card border-0 shadow-lg position-sticky" style="top: 10px;">
+                                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical" style="width: 380px;">
+                                                <button class="nav-link active" id="v-pills-home-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button"
+                                                    role="tab" aria-controls="v-pills-home"
+                                                    aria-selected="true">កន្លែងស្នាក់នៅ</button>
+                                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                                    aria-controls="v-pills-profile"
+                                                    aria-selected="false">មធ្យោបាយធ្វើដំណើរ</button>
+                                                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-messages" type="button" role="tab"
+                                                    aria-controls="v-pills-messages"
+                                                    aria-selected="false">អាកាសធាតុ</button>
+                                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                    aria-controls="v-pills-settings" aria-selected="false">វប្បធម៌
+                                                    និងការរស់នៅ</button>
+                                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                    aria-controls="v-pills-settings"
+                                                    aria-selected="false">ម្ហូបឆ្ងាញ់ប្រចាំតំបន់</button>
+                                                <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#v-pills-settings" type="button" role="tab"
+                                                    aria-controls="v-pills-settings"
+                                                    aria-selected="false">បញ្ចេញមតិយោបល់</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card border-0 shadow-lg p-4 mt-2">
+                                            <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                                    aria-labelledby="v-pills-home-tab" tabindex="0">
+                                                    <div class="container">
+                                                        <div class="row g-3">
+                                                            <h4>សូមស្វាគមន៍</h4>
+                                                            <p class="card-text text-muted">
+                                                                សូមស្វាគមន៍មកកាន់កន្លែងស្នាក់នៅរបស់យើង សាមញ្ញ
+                                                                និងសមរម្យសម្រាប់សេវាកម្មសណ្ឋាគារ ឬហូតែល។</p>
+                                                            <div class="col-12">
+                                                                <div class="card card-hover">
+                                                                    <div class="row">
+                                                                        <div class="col-5">
+                                                                            <div class="card border-0"
+                                                                                style="height: 300px;">
+                                                                                <img src="https://images.unsplash.com/photo-1636484807469-e33af13716b7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070"
+                                                                                    alt="" width="100%" ​
+                                                                                    class="img-fluid p-2">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-7">
+                                                                            <div class="card border-0"
+                                                                                style="height: 300px;">
+                                                                                <div class="card-body">
+                                                                                    <h4 class="card-title">Central
+                                                                                        Corner Suite</h4>
+                                                                                    <p​​​​ class="card-text"><i
+                                                                                            class="bi bi-geo-alt-fill text-muted"></i>
+                                                                                        សណ្ឋាគារនៅទីក្រុងសៀមរាប</p​​​​>
+                                                                                    <p class="card-text mt-3">
+                                                                                        ស្ថិតនៅក្នុងទីក្រុងសៀមរាប ចម្ងាយ
+                                                                                        ៥០០ ម៉ែត្រពី King’s Road Angkor
+                                                                                        សណ្ឋាគារ Central Corner Suite
+                                                                                        ផ្តល់សេវាកម្មលំនៅដ្ឋានដែលមានអាងហែលទឹកក្រៅអគារ
+                                                                                        កន្លែងចតរថយន្តឥតគិតថ្លៃ សួនច្បារ
+                                                                                        និងបាល់កូនកាត់សម្រាប់អង្គុយសម្រាក។
+                                                                                    </p>
+                                                                                    <div
+                                                                                        class="d-flex justify-content-between align-items-center">
+                                                                                        <button class="btn btn-ant">
+                                                                                            <i
+                                                                                                class="bi bi-eye-fill"></i>
+                                                                                            មើលលម្អិត
+                                                                                        </button>
+                                                                                        <button​ class="btn btn-ant"
+                                                                                            data-bs-toggle="modal"
+                                                                                            data-bs-target="#bookingModal">
+                                                                                            កក់ឥឡូវ
+                                                                                            <i
+                                                                                                class="bi bi-arrow-right-short"></i>
+                                                                                        </button​>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <a href="" class="">
+                                                                <button​ type="button" class="card-text mt-5 ">មើលបន្ថែម
+                                                                    <i class="bi bi-chevron-right"></i></button>​
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                                    aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
+                                                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
+                                                    aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
+                                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                                    aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
+                                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                                    aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- modal booking -->
+            <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="bookingModalLabel">
+                                កក់</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="contaienr">
+                                <h4>កក់បន្ទប់</h4>
+                                <p>សូមស្វាគមន៍មកកាន់ សេវាកម្មកក់សណ្ឋាគារ របស់យើង!</p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="mt-3">
+                                                <fieldset class="border p-3 rounded">
+                                                    <legend class="float-none w-auto px-2">ឈ្មោះ (Name)</legend>
+
+                                                    <div class="row g-2">
+                                                        <div class="col-6">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="នាមខ្លួន (First Name)">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <input type="text" class="form-control"
+                                                                placeholder="នាមត្រកូល (Last Name)">
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <label for="roomType" class="form-label">ប្រភេទបន្ទប់</label>
+                                            <select id="roomType" class="form-select">
+                                                <option selected disabled>សូមជ្រើសរើសប្រភេទបន្ទប់</option>
+                                                <option value="standard">បន្ទប់ធម្មតា (Standard Room)</option>
+                                                <option value="deluxe">បន្ទប់ឧត្តម (Deluxe Room)</option>
+                                                <option value="family">បន្ទប់គ្រួសារ (Family Room)</option>
+                                                <option value="vip">បន្ទប់ពិសេស (VIP Suite)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mt-3">
+                                            <label for="form-label">អ៊ីមែល</label>
+                                            <input type="email" class="form-control" placeholder="example@gmail.com">
+                                        </div>
+                                        <div class="mt-3">
+                                            <label for="form-label">Number of Guest</label>
+                                            <input type="number" class="form-control" placeholder="e.g 23">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label">ថ្ងៃមកដល់ (Arrival Date)</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+
+                                        <div class="col-md-4">
+                                            <label class="form-label">ម៉ោងមកដល់ (Arrival Time)</label>
+                                            <input type="time" class="form-control">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">ពេលវេលា (AM / PM)</label>
+                                            <select class="form-select">
+                                                <option value="">AM</option>
+                                                <option value="">PM</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save
+                                    changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
         </section>
     </main>
 
     <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script> AOS.init(); </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- modal 3 layer -->
+    <script>
+        const modals = ['#menuModalLabel', '#bookingModal', '#thirdModal'];
+
+        modals.forEach(id => {
+            const modal = document.querySelector(id);
+            modal.addEventListener('show.bs.modal', (e) => {
+                const openModals = document.querySelectorAll('.modal.show');
+                openModals.forEach(m => m.classList.add('opacity-75')); // fade background
+            });
+
+            modal.addEventListener('hidden.bs.modal', (e) => {
+                const openModals = document.querySelectorAll('.modal.show');
+                openModals.forEach(m => m.classList.remove('opacity-75'));
+            });
+        });
+    </script>
+
+    <!-- Search  -->
+    <div class="results" id="results"></div>
+    <script>
+        const provinces = [
+            "Phnom Penh", "Siem Reap", "Battambang", "Kampong Cham", "Kandal",
+            "Takeo", "Kampot", "Preah Sihanouk", "Kampong Thom", "Banteay Meanchey",
+            "Kampong Speu", "Pursat", "Svay Rieng", "Prey Veng", "Koh Kong",
+            "Oddar Meanchey", "Pailin", "Stung Treng", "Kratie", "Mondulkiri",
+            "Ratanakiri", "Tbong Khmum", "Kep"
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const searchBtn = document.getElementById('searchBtn');
+        const resultsDiv = document.getElementById('results');
+
+        function searchProvinces() {
+            const query = searchInput.value.toLowerCase();
+            const filtered = provinces.filter(p => p.toLowerCase().includes(query));
+
+            resultsDiv.innerHTML = '';
+
+            if (filtered.length === 0) {
+                resultsDiv.innerHTML = '<p>No results found.</p>';
+                return;
+            }
+
+            filtered.forEach(province => {
+                const div = document.createElement('div');
+                div.classList.add('result-item');
+                div.textContent = province;
+                resultsDiv.appendChild(div);
+            });
+        }
+
+        searchBtn.addEventListener('click', searchProvinces);
+        searchInput.addEventListener('keypress', e => {
+            if (e.key === 'Enter') searchProvinces();
+        });
+    </script>
+
+    <!-- Card hover Swiper -->
+    <script>
+        var heroSwiper = new Swiper(".heroSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".heroSwiper .swiper-pagination",
+                clickable: true,
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Nav and tab -->
+    <script>
+        const triggerTabList = document.querySelectorAll('#myTab button')
+        triggerTabList.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl)
+
+            triggerEl.addEventListener('click', event => {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
+    </script>
+    <!-- navbar scroll -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 80) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
