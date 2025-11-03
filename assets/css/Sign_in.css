@@ -107,8 +107,3 @@ border: 1px solid rgba(255, 255, 255, 0.05) !important;
     width: 50% !important;
   }
 }
-@media only screen and (max-width: 991px) {
-  .width-sign-in{
-    width: 75% !important;
-  }
-}
