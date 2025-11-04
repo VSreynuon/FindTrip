@@ -19,69 +19,6 @@
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <style>
-        .search-container {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            background-color: white;
-            border-radius: 30px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-            padding: 5px 10px;
-            transition: all 0.3s ease;
-        }
-
-        .search-container input {
-            border: none;
-            outline: none;
-            padding: 10px;
-            width: 100%;
-            font-size: 16px;
-        }
-
-        .search-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .search-button:hover {
-            background-color: #45a049;
-        }
-
-        .search-button svg {
-            width: 20px;
-            height: 20px;
-            fill: white;
-        }
-
-        .results {
-            margin-top: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-            width: 300px;
-            padding: 15px;
-        }
-
-        .result-item {
-            padding: 8px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .result-item:last-child {
-            border-bottom: none;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -124,111 +61,44 @@
                         </li>
                     </ul>
                     <div class="">
-                        <a href="" class=""><button type="button"
-                                class="btn btn-signin fw-semibold">ចូលគណនី</button></a>
-                        <a href="" class=""><button type="button"
-                                class="btn btn-signup fw-semibold ms-2">បង្កើតគណនី</button></a>
+                        <a href=""><button type="button" class="btn  fw-semibold">ចូលគណនី</button></a>
+                        <a href="signup.html"><button type="button"
+                                class="btn  fw-semibold ms-2">បង្កើតគណនី</button></a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section style="margin-top: 100px ">
+        <section>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card p-4 border-0 shadow-sm">
+                        <div class="card border-0 shadow-sm">
                             <div class="row">
-                                <div class="col-6">
-                                    <div class="card border-0">
-                                        <div class="card-body">
-                                            <div class="p-4">
-                                                <h4 class="card-title fs-1 fw-bold">
+                                <div class="col-12">
+                                    <div class="card border-0  position-relative">
+                                        <div class="card-img" style="height: 780px;">
+                                            <img src="assets/img/home-img/Picture1.jpg" alt="" width="100%">
+                                        </div>
+
+                                        <div class="card-body position-absolute " style="margin-top: 15% !important;">
+                                            <div class="m-auto text-center text-white p-4 w-50 ">
+                                                <h4 class="card-title fs-1 fw-bold mb-4">
                                                     សូមស្វាគមន៍មកកាន់ប្រទេសកម្ពុជា
                                                 </h4>
-                                                <p class="card-text fs-5 text-muted">ប្រទេសកម្ពុជា
+                                                <p class="card-text fs-4">ប្រទេសកម្ពុជា
                                                     ជាទីកន្លែងទេសចរណ៍ដ៏អស្ចារ្យមួយ ដែលពោរពេញដោយប្រវត្តិសាស្រ្តវ័យជាច្រើន
                                                     សម្បូរទៅដោយវប្បធម៌ និងទេសភាពធម្មជាតិដ៏ស្រស់ស្អាត។
                                                     ប្រជាជនកម្ពុជាមានភាពស្និទ្ធស្នាល អធ្យាស្រ័យ
-                                                    និងសប្បាយរីករាយក្នុងការស្វាគមន៍ភ្ញៀវទេសចរទាំងក្នុង និងក្រៅប្រទេស។
+                                                    និងសប្បាយរីករាយក្នុងការស្វាគមន៍ភ្ញៀវទេសចរណ៍
                                                 </p>
-                                                <div class="search-container mt-5" id="searchBox">
-                                                    <input type="text" id="searchInput" placeholder="Type to search...">
+                                                <div class="search-container mt-5 m-auto" id="searchBox">
+                                                    <input type="text" id="searchInput" placeholder="ស្វែងរក...">
                                                     <button class="search-button" id="searchBtn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
-                                                            6.5 6.5 0 109.5 16c1.61 0 3.09-.59 
-                                                             4.23-1.57l.27.28v.79l5 4.99L20.49 
-                                                         19l-4.99-5zm-6 0C8.01 14 6 11.99 
-                                                            6 9.5S8.01 5 10.5 5 15 7.01 15 
-                                                         9.5 12.99 14 10.5 14z" />
-                                                        </svg>
+                                                        <i class="bi bi-search"></i>
                                                     </button>
                                                 </div>
-                                            </div>
-                                            <!-- <div> -->
-                                            <div class="row p-4">
-                                                <div class="col-6">
-                                                    <div style="width: 80%;">
-                                                        <a href="https://maps.app.goo.gl/cJsdnignUYLBKpWm7"><img
-                                                                src="assets/img/cam-map.png" alt=""></a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="card border-0">
-                                                        <div class="row g-2">
-                                                            <div class="col-12">
-                                                                <div class="card border-0 shadow-sm bg-success-subtle">
-                                                                    <div class="card-body">
-                                                                        <div class="text-center">
-                                                                            <h4​
-                                                                                class="card-tile fw-bold fs-3 text-success">
-                                                                                កន្លែងកំសាន្ត</h4​>
-                                                                            <p class="card-text fs-4 fw-medium">345</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <div class="card border-0 shadow-sm bg-danger-subtle">
-                                                                    <div class="card-body">
-                                                                        <div class="text-center">
-                                                                            <h4​
-                                                                                class="card-tile fw-bold fs-3 text-success">
-                                                                                ចំនួនអ្នកមើល</h4​>
-                                                                            <p class="card-text fs-4 fw-medium">345</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="card border-0">
-                                        <div class="" style="margin-top: 6%; height: 580px;">
-                                            <!-- Swiper -->
-                                            <div class="swiper heroSwiper rounded-2">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
-                                                            alt=""></div>
-                                                    <div class="swiper-slide"><img src="assets/img/card-img/1.jpg"
-                                                            alt=""></div>
-                                                    <div class="swiper-slide"><img
-                                                            src="https://images.unsplash.com/photo-1708885819844-aeb2b90886aa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDQzfHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=600"
-                                                            alt=""></div>
-                                                    <div class="swiper-slide"><img
-                                                            src="https://cf.bstatic.com/xdata/images/hotel/square600/492409391.webp?k=86384505df217d6de0d2a321e138ac0a975303d23609a176a674ae9d775112a7&o="
-                                                            alt=""></div>
-                                                </div>
-                                                <!-- <div class="swiper-button-next"></div>
-                                                        <div class="swiper-button-prev"></div> -->
-                                                <div class="swiper-pagination"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -238,6 +108,49 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <div class="w-50 m-auto">
+                    <div class="row">
+                        <h4></h4>
+                        <div class="col-3">
+                            <div class="card border-0">
+                                <div class="p-4 rounded-circle fs-1 text-success bg-icon shadow-lg"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="bi bi-balloon-fill"></i>
+                                </div>
+                                <div class="card-body">
+                                    <p​ class="card-text fs-4 fw-medium"></p​>
+                                    <h4 class="card-text">25 ខេត្ត</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0">
+                                <div class="p-4 rounded-circle display-5 text-success bg-icon shadow-lg"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="bi bi-airplane-fill"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-text">889 កន្លែង</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0">
+                                <div class="p-4 rounded-circle display-5 text-success bg-icon shadow-lg"
+                                    style="width: 100px; height: 100px;">
+                                    <i class="bi bi-bar-chart-fill"></i>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-text">10K អ្នកមើល</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <section style="margin-top: 30px;">
@@ -250,7 +163,7 @@
                                 <div class="col-4">
                                     <div class="card card-hover">
                                         <div class="card-img position-relative overflow-hidden">
-                                            <img src="assets/img/card-img/1.jpg" alt="" width="100%"
+                                            <img src="assets/img/home-img/Picture1.jpg" alt="" width="100%"
                                                 class="p-4  card-image position-absolute" style="object-fit: cover;">
                                             <!-- Swiper -->
                                             <div class="swiper mySwiper position-absolute">
@@ -264,8 +177,7 @@
                                                     <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
                                                             alt="" style="height: 438px;"></div>
                                                 </div>
-                                                <!-- <div class="swiper-button-next"></div>
-                                                        <div class="swiper-button-prev"></div> -->
+
                                                 <div class="swiper-pagination"></div>
                                             </div>
                                         </div>
@@ -330,7 +242,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="container-fluid">
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-4">
                                         <div class="card border-0 shadow-lg position-sticky" style="top: 10px;">
@@ -423,7 +335,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                             <a href="" class="">
                                                                 <button​ type="button" class="card-text mt-5 ">មើលបន្ថែម
                                                                     <i class="bi bi-chevron-right"></i></button>​
@@ -432,21 +343,84 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                                                    aria-labelledby="v-pills-profile-tab" tabindex="0">...</div>
-                                                <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel"
-                                                    aria-labelledby="v-pills-disabled-tab" tabindex="0">...</div>
-                                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
-                                                    aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
-                                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                                    aria-labelledby="v-pills-settings-tab" tabindex="0">...</div>
+                                                    aria-labelledby="v-pills-profile-tab" tabindex="0">
+                                                    <ul class="nav nav-pill mb-3" id="pills-tab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="pills-home-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                                type="button" role="tab" aria-controls="pills-home"
+                                                                aria-selected="true">
+                                                                <div>
+                                                                    <i class="fa-solid fa-house-chimney"></i>
+                                                                    <p>Home</p>
+                                                                </div>
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-profile-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                                type="button" role="tab" aria-controls="pills-profile"
+                                                                aria-selected="false">
+                                                                <div>
+                                                                    <i class="fa-solid fa-alarm-clock"></i>
+                                                                    <p>My Booking</p>
+                                                                </div>
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-contact-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                                                type="button" role="tab" aria-controls="pills-contact"
+                                                                aria-selected="false">
+                                                                <div>
+                                                                    <i class="fa-solid fa-house-chimney"></i>
+                                                                    <p>Support</p>
+                                                                </div>
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="pills-contact-tab"
+                                                                data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                                                type="button" role="tab" aria-controls="pills-contact"
+                                                                aria-selected="false">
+                                                                <div>
+                                                                    <i class="bi bi-person-fill"></i>
+                                                                    <p>Account</p>
+                                                                </div>
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content" id="pills-tabContent">
+                                                        <div class="tab-pane fade show active" id="pills-home"
+                                                            role="tabpanel" aria-labelledby="pills-home-tab"
+                                                            tabindex="0">
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class="card">
+                                                                        <img src="" alt="">
+                                                                        <div class="card-body">
+                                                                            <h5>Richshaw</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                            aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                                            aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -463,80 +437,139 @@
                         </div>
                         <div class="modal-body">
                             <div class="contaienr">
-                                <h4>កក់បន្ទប់</h4>
-                                <p>សូមស្វាគមន៍មកកាន់ សេវាកម្មកក់សណ្ឋាគារ របស់យើង!</p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="row">
-                                            <div class="mt-3">
-                                                <fieldset class="border p-3 rounded">
-                                                    <legend class="float-none w-auto px-2">ឈ្មោះ (Name)</legend>
-
-                                                    <div class="row g-2">
+                                <div class="shadow-lg p-4 rounded-4">
+                                    <div class="row">
+                                        <div class="text-center">
+                                            <h4>កក់បន្ទប់</h4>
+                                            <p>សូមស្វាគមន៍មកកាន់ សេវាកម្មកក់សណ្ឋាគារ របស់យើង!</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="mt-3">
+                                                    <label for="form-label">ឈ្មោះ</label>
+                                                    <div class="row">
                                                         <div class="col-6">
                                                             <input type="text" class="form-control"
-                                                                placeholder="នាមខ្លួន (First Name)">
+                                                                placeholder="នាមខ្លួន">
                                                         </div>
                                                         <div class="col-6">
                                                             <input type="text" class="form-control"
-                                                                placeholder="នាមត្រកូល (Last Name)">
+                                                                placeholder="នាមត្រកូល">
                                                         </div>
                                                     </div>
-                                                </fieldset>
+
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+
+                                                <label for="roomType" class="form-label">ប្រភេទបន្ទប់</label>
+                                                <select id="roomType" class="form-select">
+                                                    <option selected disabled>សូមជ្រើសរើសប្រភេទបន្ទប់</option>
+                                                    <option value="standard">បន្ទប់ធម្មតា (Standard Room)
+                                                    </option>
+                                                    <option value="deluxe">បន្ទប់ឧត្តម (Deluxe Room)</option>
+                                                    <option value="family">បន្ទប់គ្រួសារ (Family Room)</option>
+                                                    <option value="vip">បន្ទប់ពិសេស (VIP Suite)</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mt-3">
+                                                <label for="form-label">អ៊ីមែល</label>
+                                                <input type="email" class="form-control"
+                                                    placeholder="example@gmail.com">
+                                            </div>
+                                            <div class="mt-3">
+                                                <div class="mt-4">
+                                                    <label for="form-label">ចំនួនភ្ញៀវ</label>
+                                                    <input type="number" class="form-control" placeholder="e.g 23">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-md-4">
+                                                <label class="form-label">ថ្ងៃមកដល់</label>
+                                                <input type="date" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">ម៉ោងមកដល់</label>
+                                                <input type="time" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="form-label">ពេលវេលា (AM / PM)</label>
+                                                <select class="form-select">
+                                                    <option value="">AM</option>
+                                                    <option value="">PM</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="mt-3">
-                                            <label for="roomType" class="form-label">ប្រភេទបន្ទប់</label>
-                                            <select id="roomType" class="form-select">
-                                                <option selected disabled>សូមជ្រើសរើសប្រភេទបន្ទប់</option>
-                                                <option value="standard">បន្ទប់ធម្មតា (Standard Room)</option>
-                                                <option value="deluxe">បន្ទប់ឧត្តម (Deluxe Room)</option>
-                                                <option value="family">បន្ទប់គ្រួសារ (Family Room)</option>
-                                                <option value="vip">បន្ទប់ពិសេស (VIP Suite)</option>
-                                            </select>
+                                            <div class="row">
+                                                <label for="form-control">Departure Date</label>
+                                                <div class="col-4">
+                                                    <select class="form-select">
+                                                        <option value="">សូមជ្រើសរើសខែ</option>
+                                                        <option value="">សូមជ្រើសរើសខែ</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-select">
+                                                        <option value="">សូមជ្រើសរើសខែ</option>
+                                                        <option value="">សូមជ្រើសរើសខែ</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-select">
+                                                        <option value="">សូមជ្រើសរើសខែ</option>
+                                                        <option value="">សូមជ្រើសរើសខែ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-6">
                                         <div class="mt-3">
-                                            <label for="form-label">អ៊ីមែល</label>
-                                            <input type="email" class="form-control" placeholder="example@gmail.com">
+                                            <div class="row">
+                                                <label for="form-label">Free pick up?</label>
+                                                <div class="col-6">
+                                                    <div class="mt-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name=""
+                                                                id="" />
+                                                            <label class="form-check-label" for="">Yes,
+                                                                please</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mt-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name=""
+                                                                id="" />
+                                                            <label class="form-check-label" for=""> No Thanks
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mt-3">
-                                            <label for="form-label">Number of Guest</label>
-                                            <input type="number" class="form-control" placeholder="e.g 23">
+                                        <div class="my-3">
+                                            <div class="form-floating">
+                                                <textarea class="form-control" placeholder="Leave a comment here"
+                                                    id="floatingTextarea"></textarea>
+                                                <label for="floatingTextarea">Comments</label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row mt-3">
-                                        <div class="col-md-4">
-                                            <label class="form-label">ថ្ងៃមកដល់ (Arrival Date)</label>
-                                            <input type="date" class="form-control">
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-green">Submit</button>
                                         </div>
-
-                                        <div class="col-md-4">
-                                            <label class="form-label">ម៉ោងមកដល់ (Arrival Time)</label>
-                                            <input type="time" class="form-control">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label class="form-label">ពេលវេលា (AM / PM)</label>
-                                            <select class="form-select">
-                                                <option value="">AM</option>
-                                                <option value="">PM</option>
-                                            </select>
-                                        </div>
-
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save
-                                    changes</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            </div>
+            
         </section>
     </main>
 
@@ -547,7 +580,7 @@
 
     <!-- modal 3 layer -->
     <script>
-        const modals = ['#menuModalLabel', '#bookingModal', '#thirdModal'];
+        const modals = ['#menuModal', '#bookingModal', '#thirdModal'];
 
         modals.forEach(id => {
             const modal = document.querySelector(id);
