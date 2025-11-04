@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Trip</title>
+
+
     <!-- link css  style -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -23,12 +25,25 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg shadow-lg fixed-top p-1 ">
+        <nav class="navbar navbar-expand-lg d-flex flex-column fixed-top p-0">
+            <div class="container">
+                <div class="d-flex justify-content-between align-content-center">
+                    <div>
+                        <a class="mt-5" href="tel:+855963022878">(+855) 96 30 22 878</a>
+                    </div>
+                    <div>
+                        <button class="search-button" id="searchBtn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-100 border-2" style="color: white;">
             <div class="container">
                 <div class="d-flex align-items-center">
-                    <a class="navbar-brand fs-4 text-white" href="#"><img src="assets/img/logo-brand.jpg" alt="logo"
-                            width="100%" class="rounded-circle" style="width: 80px; height: 80px;"></a>
-                    <h4 class="mb-0 text-white">ស្វែងរកកន្លែងកំសាន្ត</h4>
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo-brand.jpg" alt="logo" width="100%"
+                            class="rounded-circle" style="width: 60px; height: 60px;"></a>
+                    <h4 class="mb-0 text-white" style="font-family: 'Moulpali';">ស្វែងរកកន្លែងកំសាន្ត</h4>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -36,13 +51,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav mx-auto mb-ml-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">ទំព័រដើម</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#"
+                                style="font-family: 'Moulpali';">ទំព័រដើម</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false" style="font-family: 'Moulpali';">
                                 ខេត្ត
                             </a>
                             <ul class="dropdown-menu">
@@ -54,16 +70,18 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">ទំនាក់ទំនង</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#"
+                                style="font-family: 'Moulpali';">ទំនាក់ទំនង</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#">អំពីយើង</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#"
+                                style="font-family: 'Moulpali';">អំពីយើង</a>
                         </li>
                     </ul>
                     <div class="">
-                        <a href=""><button type="button" class="btn  fw-semibold">ចូលគណនី</button></a>
+                        <a href=""><button type="button" class="btn btn-signin rounded-pill ">ចូលគណនី</button></a>
                         <a href="signup.html"><button type="button"
-                                class="btn  fw-semibold ms-2">បង្កើតគណនី</button></a>
+                                class="btn btn-signup rounded-pill  ms-2">បង្កើតគណនី</button></a>
                     </div>
                 </div>
             </div>
@@ -74,32 +92,62 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card border-0 shadow-sm">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="card border-0  position-relative">
-                                        <div class="card-img" style="height: 780px;">
-                                            <img src="assets/img/home-img/Picture1.jpg" alt="" width="100%">
-                                        </div>
+                        <div class="card border-0  position-relative">
+                            <div class="card-img" style="height: 780px;">
+                                <img src="assets/img/home-img/Picture1.jpg" alt="" width="100%">
+                            </div>
 
-                                        <div class="card-body position-absolute " style="margin-top: 15% !important;">
-                                            <div class="m-auto text-center text-white p-4 w-50 ">
-                                                <h4 class="card-title fs-1 fw-bold mb-4">
-                                                    សូមស្វាគមន៍មកកាន់ប្រទេសកម្ពុជា
-                                                </h4>
-                                                <p class="card-text fs-4">ប្រទេសកម្ពុជា
-                                                    ជាទីកន្លែងទេសចរណ៍ដ៏អស្ចារ្យមួយ ដែលពោរពេញដោយប្រវត្តិសាស្រ្តវ័យជាច្រើន
-                                                    សម្បូរទៅដោយវប្បធម៌ និងទេសភាពធម្មជាតិដ៏ស្រស់ស្អាត។
-                                                    ប្រជាជនកម្ពុជាមានភាពស្និទ្ធស្នាល អធ្យាស្រ័យ
-                                                    និងសប្បាយរីករាយក្នុងការស្វាគមន៍ភ្ញៀវទេសចរណ៍
-                                                </p>
-                                                <div class="search-container mt-5 m-auto" id="searchBox">
-                                                    <input type="text" id="searchInput" placeholder="ស្វែងរក...">
-                                                    <button class="search-button" id="searchBtn">
-                                                        <i class="bi bi-search"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
+                            <div class="card-body position-absolute " style="margin-top: 15% !important;">
+                                <div class="m-auto text-center text-white p-4 w-50 ">
+                                    <h4 class="card-title fs-1 fw-bold mb-4">
+                                        សូមស្វាគមន៍មកកាន់ប្រទេសកម្ពុជា
+                                    </h4>
+                                    <p class="card-text fs-4">ប្រទេសកម្ពុជា
+                                        ជាទីកន្លែងទេសចរណ៍ដ៏អស្ចារ្យមួយ ដែលពោរពេញដោយប្រវត្តិសាស្រ្តវ័យជាច្រើន
+                                        សម្បូរទៅដោយវប្បធម៌ និងទេសភាពធម្មជាតិដ៏ស្រស់ស្អាត។
+                                        ប្រជាជនកម្ពុជាមានភាពស្និទ្ធស្នាល អធ្យាស្រ័យ
+                                        និងសប្បាយរីករាយក្នុងការស្វាគមន៍ភ្ញៀវទេសចរណ៍
+                                    </p>
+                                    <div class="search-container mt-5 m-auto" id="searchBox">
+                                        <input type="text" id="searchInput" placeholder="ស្វែងរក...">
+                                        <button class="search-button" id="searchBtn">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="position-absolute z-3 mb-5  w-100 d-flex align-items-center justify-content-center"
+                                style="top: 93%; ">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card ">
+                                            <ul class="nav nav-pill" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+                                                        role="tab" aria-controls="pills-home"
+                                                        aria-selected="true">កន្លែងកំសាន្តពេញនិយម</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                        type="button" role="tab" aria-controls="pills-profile"
+                                                        aria-selected="false">ប្រភេទទេសចរណ៍</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                        type="button" role="tab" aria-controls="pills-profile"
+                                                        aria-selected="false">វប្បធម៌​ & ប្រវត្តិសាស្រ្ត</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-contact-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-contact"
+                                                        type="button" role="tab" aria-controls="pills-contact"
+                                                        aria-selected="false">គន្លឹនៃការធ្វើដំណើរ</button>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -109,103 +157,97 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5">
-            <div class="container">
-                <div class="w-50 m-auto">
-                    <div class="row">
-                        <h4></h4>
-                        <div class="col-3">
-                            <div class="card border-0">
-                                <div class="p-4 rounded-circle fs-1 text-success bg-icon shadow-lg"
-                                    style="width: 100px; height: 100px;">
-                                    <i class="bi bi-balloon-fill"></i>
-                                </div>
-                                <div class="card-body">
-                                    <p​ class="card-text fs-4 fw-medium"></p​>
-                                    <h4 class="card-text">25 ខេត្ត</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card border-0">
-                                <div class="p-4 rounded-circle display-5 text-success bg-icon shadow-lg"
-                                    style="width: 100px; height: 100px;">
-                                    <i class="bi bi-airplane-fill"></i>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-text">889 កន្លែង</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card border-0">
-                                <div class="p-4 rounded-circle display-5 text-success bg-icon shadow-lg"
-                                    style="width: 100px; height: 100px;">
-                                    <i class="bi bi-bar-chart-fill"></i>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-text">10K អ្នកមើល</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section style="margin-top: 30px;">
+        <section style="margin-top: 80px;">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="card p-4 border-0 shadow-sm bg-body-secondary">
-                            <div class="row g-4">
-                                <h4​ class="fs-2 fw-medium mb-2">កន្លែងកំសាន្តពេញនិយម</h4​>
-                                <div class="col-4">
-                                    <div class="card card-hover">
-                                        <div class="card-img position-relative overflow-hidden">
-                                            <img src="assets/img/home-img/Picture1.jpg" alt="" width="100%"
-                                                class="p-4  card-image position-absolute" style="object-fit: cover;">
-                                            <!-- Swiper -->
-                                            <div class="swiper mySwiper position-absolute">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
-                                                            alt="" style="height: 438px;"></div>
-                                                    <div class="swiper-slide"><img src="assets/img/card-img/1.jpg"
-                                                            alt="" style="height: 438px;"></div>
-                                                    <div class="swiper-slide"><img src="assets/img/card-img/img-3.avif"
-                                                            alt="" style="height: 438px;"></div>
-                                                    <div class="swiper-slide"><img src="assets/img/hero-benner.jpg"
-                                                            alt="" style="height: 438px;"></div>
-                                                </div>
+                            <!-- <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">កន្លែងកំសាន្តពេញនិយម</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">ប្រភេទទេសចរណ៍</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">មធ្យោបាយធ្វើដំណើរ</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                </li>
+                            </ul> -->
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="row g-4">
+                                        <div class="col-4">
+                                            <div class="card card-hover">
+                                                <div class="card-img position-relative overflow-hidden">
+                                                    <img src="assets/img/home-img/Picture1.jpg" alt="" width="100%"
+                                                        class="p-4  card-image position-absolute"
+                                                        style="object-fit: cover;">
+                                                    <!-- Swiper -->
+                                                    <div class="swiper mySwiper position-absolute">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide"><img
+                                                                    src="assets/img/hero-benner.jpg" alt=""
+                                                                    style="height: 438px;"></div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="assets/img/card-img/1.jpg" alt=""
+                                                                    style="height: 438px;"></div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="assets/img/card-img/img-3.avif" alt=""
+                                                                    style="height: 438px;"></div>
+                                                            <div class="swiper-slide"><img
+                                                                    src="assets/img/hero-benner.jpg" alt=""
+                                                                    style="height: 438px;"></div>
+                                                        </div>
 
-                                                <div class="swiper-pagination"></div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <h4 class="card-title fw-semibold"><button type="button" class="btn"
-                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                    <i class="bi bi-geo-alt-fill fs-4 text-danger"></i>
-                                                </button>ប្រាសាទអង្គវត្ត</h4>
-                                            <p class="card-text fs-5 fw-medium text-limit mb-4">ប្រាសាទអង្គរវត្ត
-                                                ជាប្រាសាទដែលមានប្រជាប្រិយបំផុតនៅកម្ពុជា
-                                                ហើយជាស្នាដៃស្ថាបត្យកម្មដ៏អស្ចារ្យនៃអាណាចក្រខ្មែរ។
-                                                ប្រាសាទនេះត្រូវបានសង់ឡើងនៅសតវត្សទី១២
-                                                ដោយព្រះបាទសូរ្យវរ្ម័នទី២ ដើម្បីឧទ្ទិសដល់ព្រះវិស្ណុ (Vishnu)
-                                                តាមប្រពៃណីសាសនាហិណ្ឌូ។
-                                            </p>
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <button​ class="btn btn-ant"><i class="bi bi-book"></i> អានលម្អិត
-                                                </button​>
-                                                <button type="button"
-                                                    class="btn rounded-circle bg-success-subtle d-flex justify-content-center align-items-center"
-                                                    data-bs-toggle="modal" data-bs-target="#menuModal"
-                                                    style="width: 50px; height: 50px;">
-                                                    <i class="fa-solid fa-house fs-4 text-success"></i>
-                                                </button>
+                                                        <div class="swiper-pagination"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title fw-semibold"><button type="button" class="btn"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            <i class="bi bi-geo-alt-fill fs-4 text-danger"></i>
+                                                        </button>ប្រាសាទអង្គវត្ត</h4>
+                                                    <p class="card-text fs-5 fw-medium text-limit mb-4">ប្រាសាទអង្គរវត្ត
+                                                        ជាប្រាសាទដែលមានប្រជាប្រិយបំផុតនៅកម្ពុជា
+                                                        ហើយជាស្នាដៃស្ថាបត្យកម្មដ៏អស្ចារ្យនៃអាណាចក្រខ្មែរ។
+                                                        ប្រាសាទនេះត្រូវបានសង់ឡើងនៅសតវត្សទី១២
+                                                        ដោយព្រះបាទសូរ្យវរ្ម័នទី២ ដើម្បីឧទ្ទិសដល់ព្រះវិស្ណុ (Vishnu)
+                                                        តាមប្រពៃណីសាសនាហិណ្ឌូ។
+                                                    </p>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <button​ class="btn btn-ant"><i class="bi bi-book"></i>
+                                                            អានលម្អិត
+                                                        </button​>
+                                                        <button type="button"
+                                                            class="btn rounded-circle bg-success-subtle d-flex justify-content-center align-items-center"
+                                                            data-bs-toggle="modal" data-bs-target="#menuModal"
+                                                            style="width: 50px; height: 50px;">
+                                                            <i class="fa-solid fa-house fs-4 text-success"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                    aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
                             </div>
                         </div>
                     </div>
@@ -569,7 +611,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </section>
     </main>
 
