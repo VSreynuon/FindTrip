@@ -34,7 +34,7 @@ body {
   font-size: 18px !important;
   font-weight: 400;
 }
-.nav-link:hover {
+.nav-hover:hover {
   text-decoration: underline !important;
   text-underline-offset: 20px;
   text-decoration-thickness: 3px !important;
@@ -59,7 +59,11 @@ body {
   border-color: var(--gray-100) !important;
   background-color: var(--bg-red) !important;
 }
-
+/* .bg-search{
+  color: var(--text-white) !important;
+  background-color: var(--bg-red) !important;
+  border: var(--gray-100) !important;
+} */
 .hero-baner {
   margin-top: 8px;
   width: 100%;
@@ -163,21 +167,21 @@ body {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: 0.2s;
 }
-.nav-link{
-  margin: 30px;
-  border-radius: 4px;
+.nav-tab{
+  margin: 30px !important;
+  border-radius: 4px !important;
   color: var(--gray-900) !important;
 }
-.nav-pill .nav-link.active{
+.nav-pill .nav-tab.active{
   margin: 30px;
   border-radius: 4px;
   color: var(--text-white) !important;
   background-color: var(--bg-red);
 }
-.nav-pills .nav-link.active {
+/* .nav-pills .nav-.active {
   width: 340px;
   background-color: var(--gradient-culture-start) !important;
-}
+} */
 
 
 .card-img {
