@@ -119,6 +119,9 @@ body {
 .text-purple{
   color: var(--purple-halt) !important;
 }
+.text-red{
+  color: var(--red-halt) !important;
+}
 .bg-pu{
   background-color: var(--blue) !important;
 }
