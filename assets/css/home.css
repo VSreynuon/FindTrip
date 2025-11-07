@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
-  font-family: "Kantumruy Pro","Moulpali","Poppins"!important;
+  font-family: "Kantumruy Pro", "Moulpali", "Poppins" !important;
   line-height: 1.6;
 }
 
 :root {
   /* Primary Colors */
-  --primary-Dark-blue:#0C134F;
+  --purple: #3b0270;
+  --red: #662222;
+  --blue: #0c134f;
+  --white: #fff;
 
-  /* Secondary Colors */
-  --bg-red:#A72703;
-  --secondary-green-bg: #ecfdf3;
-  --secondary-pink-bg: #fef3f2;
-  --secondary-gray-bg: #ecf3ff;
+  /* meduim color */
+  --purple-halt: #9112bc;
+  --purple-h: #7e1891;
+  --purple-l: #7A1CAC;
+  --red-halt:#DC0E0E;
+
+  /* think Colors */
+  --purple-light: #e1b5f0b3;
+  --green-light: #ecfdf3;
+  --pink-light: #fef3f2;
+  --gray-light: #ecf3ff;
 
   /* Neutral Colors */
   --gray-50: #f9fafb;
@@ -28,7 +37,7 @@ body {
 }
 
 .navbar {
-  background-color: var(--primary-Dark-blue);
+  background-color: var(--purple);
 }
 .nav-link {
   font-size: 18px !important;
@@ -36,176 +45,153 @@ body {
 }
 .nav-hover:hover {
   text-decoration: underline !important;
-  text-underline-offset: 20px;
+  text-underline-offset: 14px;
   text-decoration-thickness: 3px !important;
-  text-decoration-color: var(--bg-red) !important;
+  text-decoration-color: var(--white) !important;
 }
+
+.nav-tab {
+  margin: 28px !important;
+  border-radius: 4px !important;
+  color: var(--white) !important;
+}
+.nav-pill .nav-tab.active {
+  margin: 30px;
+  border-radius: 4px;
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+  background-color: var(--red);
+}
+.nav-cul {
+  color: var(--purple) !important;
+}
+.nav-pills .nav-cul.active {
+  color: var(--text-white) !important;
+  background-color: var(--purple-halt) !important;
+}
+.nav-pills .nav-text.active {
+  color: var(--gray-900) !important;
+  background: none !important;
+}
+
 .btn-signin {
   padding: 10px 20px !important;
   color: var(--text-white) !important;
-  border-color: var(--bg-red) !important;
+  border-color: var(--white) !important;
+  background-color: var(--purple-halt) !important;
 }
-.btn-signin:hover{
+.btn-signin:hover {
   padding: 10px 20px !important;
   border-color: var(--gray-100) !important;
-  background-color: var(--bg-red) !important;
+  background-color: var(--red) !important;
 }
 .btn-signup {
   padding: 10px 20px !important;
   color: var(--text-white) !important;
   border-color: var(--bg-red) !important;
+  background-color: var(--purple-halt) !important;
 }
-.btn-signup:hover{
+.btn-signup:hover {
   border-color: var(--gray-100) !important;
-  background-color: var(--bg-red) !important;
+  background-color: var(--red) !important;
 }
-/* .bg-search{
+.btn-ant {
+  color: var(--white) !important;
+  background-color: var(--purple-halt) !important;
+}
+.icon-red {
+  color: var(--red) !important;
+}
+.icon-red-halt{
+  color: var(--red-halt) !important;
+}
+.bg-icon {
+  color: var(--purple-halt) !important;
+  background-color: var(--purple-light) !important;
+}
+.bg-purple {
+  color: var(--white) !important;
+  background-color: var(--purple-halt) !important;
+}
+.bg-purple-light{
+  background-color: var(--purple-light) !important;
+}
+.text-purple{
+  color: var(--purple-halt) !important;
+}
+.bg-pu{
+  background-color: var(--blue) !important;
+}
+.btn-close {
+  color: var(--white) !important;
+  background-color: var(--white) !important;
+}
+.bg-blue {
+  width: 100% !important;
   color: var(--text-white) !important;
-  background-color: var(--bg-red) !important;
-  border: var(--gray-100) !important;
-} */
-.hero-baner {
-  margin-top: 8px;
-  width: 100%;
-  height: 980px;
+  background-color: var(--primary-Dark-blue) !important;
+}
+.footer-bg {
+  background-color: var(--purple) !important;
+}
+.bg-nav-modal {
+  color: var(--white) !important;
+  background-color: var(--purple-halt) !important;
+}
+.text-leng {
+  color: var(--purple-halt) !important;
+  background-color: var(--purple-light) !important;
+}
+.custom-select-kh {
+  color: var(--purple-halt) !important;
+  background-position: right 0.75rem center;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 4;
-  overflow: hidden;
-  background-image: url(../img/hero-benner.jpg);
+  background-size: 16px 12px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%238C47F3' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
 }
-
-/* card background */
-.bg-icon{
-  background-color: var(--secondary-green-bg) !important;
+.custom-select-kh:hover{
+  cursor: pointer;
 }
-.bg-pink-card{
-  background-color: var(--secondary-pink-bg) !important;
+.custom-select-kh option:nth-child(1){
+  color: var(--purple-halt) !important;
+  background-color: var(--purple-light) !important;
 }
-.bg-box{
-  background-color: var(--primary-teal);
+.custom-select-kh option:nth-child(2){
+  color: var(--purple-halt) !important;
+  background-color: var(--purple-light) !important;
 }
-
-/* btn color */
-.btn-green{
-  color: var(--text-white) !important;
-  padding: 10px 20px !important;
-  background-color: var(--primary-green) !important;
-}
-
-/* swipper */
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  transition: all 0.5s ease;
-}
-.mySwiper {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease;
-  z-index: 2;
-}
-
-/* When hover, hide main image and show swiper */
-.card-img {
-  position: relative;
-  height: 300px;
-}
-.card-img:hover .card-image {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.card-img:hover .mySwiper {
-  opacity: 1;
-  visibility: visible;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nav-tab-text {
-  color: var(--gray-900) !important;
-  background-color: var(--gradient-culture-start) !important;
-}
-
-.text-space {
-  margin-top: 300px;
-}
-.top-20 {
-  margin-top: 2% !important;
+.custom-select-kh option:checked,
+.custom-select-kh option:hover{
+  color: var(--white) !important;
+  background-color: var(--purple-halt) !important;
 }
 
 .text-limit {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-limit-three {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-limit-four {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.btn-ant {
-  color: var(--text-white) !important;
-  background-color: var(--gradient-food-start) !important;
-}
 
 .card-hover:hover {
   border: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: 0.2s;
-}
-.nav-tab{
-  margin: 30px !important;
-  border-radius: 4px !important;
-  color: var(--gray-900) !important;
-}
-.nav-pill .nav-tab.active{
-  margin: 30px;
-  border-radius: 4px;
-  color: var(--text-white) !important;
-  background-color: var(--bg-red);
-}
-/* .nav-pills .nav-.active {
-  width: 340px;
-  background-color: var(--gradient-culture-start) !important;
-} */
-
-
-.card-img {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Image visible by default */
-.card-image {
-  object-fit: cover;
-  transition: opacity 0.4s ease;
-  z-index: 2;
-  position: relative;
-  opacity: 1; /* show initially */
-}
-
-/* css */
-.hover-container {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 12px;
 }
 
 .search-container {
