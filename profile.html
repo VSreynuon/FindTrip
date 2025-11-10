@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Trip</title>
+  <!-- link css  style -->
+  <link rel="stylesheet" href="assets/css/profile.css">
+  <link rel="stylesheet" href="assets/Bootstrap/bootstrap.css">
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://css.glass ">
+
+</head>
+
+<body class="profile">
+
+  <header>
+    <nav class="navbar bg-transparent">
+      <div class="container-fluid d-block">
+        <div class="row">
+          <div class="col-10">
+            <div class="card border-0 bg-transparent border-end rounded-0 border-dark-subtle ">
+              <form class="d-flex justify-content-between " role="search">
+                <input class="form-control w-50 shadow-none" type="search" placeholder="Search" aria-label="Search" />
+                <a class="icon-head text-black btn border-0">
+                  <i class="fa-regular fa-bell pt-2 fs-5 position-relative">
+                    <div class="position-absolute rounded-circle bg-danger "
+                      style="width: 8px; height: 8px; top: 8px; right: 2px;"></div>
+                  </i>
+                </a>
+              </form>
+
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="card border-0 bg-transparent">
+              <li class="nav-item dropdown d-flex">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="assets/img/profile.jpg" alt="header-branch" class="rounded-circle me-2"
+                    style="width: 36px; height: 36px;">
+                  John
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="profile-section bg-light ">
+      <div class="container-fluid">
+        <form class="g-3 needs-validation" novalidate>
+          <div class="row">
+            <div class="col-12">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body d-flex justify-content-between">
+                  <div class="title">
+                    <h1>Settings</h1>
+                    <p>.....</p>
+                  </div>
+                  <div class="button">
+                    <button class="btn btn-bg-title-1">Cancel</button>
+                    <button class="btn btn-bg-title-2" type="submit">Save Changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="profile-section-2 bg-light">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="bg-white p-3 rounded-3 shadow ">
+              <div class="row g-1">
+                <div class="col-2 ">
+                  <div class="card pb-5 pt-3 border-0 rounded-0 pe-3">
+                    <nav class="navbar navbar-expand-lg ">
+                      <button class="navbar-toggler shadow-none bo" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel" style="width: 180px;">
+                        <div class="offcanvas-body ">
+                          <div class="nav flex-column bg-transparent" id="nav-tab" role="tablist">
+                            <button class="nav-link text-start active " id="nav-home-tab" data-bs-toggle="tab"
+                              data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                              aria-selected="true"><i class="fa-solid fa-user"></i> Account</button>
+                            <button class="nav-link text-start" id="nav-profile-tab" data-bs-toggle="tab"
+                              data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                              aria-selected="false"><i class="fa-solid fa-shield-halved"></i> Security</button>
+                            <button class="nav-link text-start" id="nav-profile-tab-1" data-bs-toggle="tab"
+                              data-bs-target="#nav-profile" type="button" role="tab " aria-controls="nav-profile"
+                              aria-selected="false"><i class="fa-solid fa-bell"></i> Notification</button>
+                            <button class="nav-link text-start" id="nav-profile-tab-2" data-bs-toggle="tab"
+                              data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                              aria-selected="false"><i class="fa-solid fa-globe"></i> Language</button>
+                            <button class="nav-link text-start text-danger" id="nav-profile-tab-5" data-bs-toggle="tab"
+                              data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                              aria-selected="false"><i class="fa-solid fa-door-open"></i>
+                              Leave</button>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-112 col-md-10 ">
+                  <div class="card border-0 px-5 rounded-0 border-start p-3">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                        aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">Account settings</h3>
+                                  <p class="text-black-50 pb-0">You can change your personal information below.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0 rounded-0 px-3">
+                              <div class="row">
+                                <div class="col-12 col-lg-6">
+                                  <div class="card border-0">
+                                    <div class="card-body pb-0">
+                                      <p class="fw-bold pb-0">Profile picture upload</p>
+                                    </div>
+                                    <div class="profile-img-title d-flex ">
+                                      <div class="img position-relative">
+                                        <button class=" border-0 bg-transparent btn-hover" type="button">
+                                          <img src="assets/img/profile.jpg" alt="profile"
+                                            class="rounded-circle border shadow-sm ms-2 "
+                                            style="width: 62px; height: 62px;">
+                                          <div class="icon-img-profile badge position-absolute"
+                                            style="bottom: 9px; left: 45px;">
+                                            <i class="fa-solid fa-cloud-arrow-up text-black fs-6"></i>
+                                          </div>
+                                        </button>
+                                      </div>
+                                      <div class="title-profile-all">
+                                        <button class="fw-bold pb-0 title-profile border-0 bg-transparent">John
+                                          Doe</button>
+                                        <p class="title-profile-p p-0 ps-2">Role/Title<br>Location</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                  <div class="card border-0 mt-md-0 mt-lg-5 ">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="card border-0 mt-4 ">
+                                          <label class="input-group-text btn py-2 rounded-3 btn-bg-title-2"
+                                            for="inputGroupFile01">Upload New Photo</label>
+                                          <input type="file" class="d-none" id="inputGroupFile01">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="card border-0 mt-4  ">
+                                          <button class="btn-bg-title-9 rounded-3  py-2">Delete</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body pb-0">
+                                <p class="fw-bold pb-0">Organization Information & Address</p>
+                              </div>
+                              <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-6">
+                                  <label for="validationCustom01" class="form-label">First name</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="John" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom02" class="form-label">Last name</label>
+                                  <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="country" class="form-label">Country</label>
+                                  <select id="country" class="form-select " name="country" required>
+                                    <option value="" disabled selected>Select your country</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a valid state.
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom03" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="validationCustom03" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom05" class="form-label">Phone number</label>
+                                  <input type="email" class="form-control" id="validationCustom05" value="" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom06" class="form-label">Email address</label>
+                                  <input type="tel" class="form-control" id="validationCustom06" value=""
+                                    placeholder="name@example.com" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button class="btn btn-bg-title-1 me-3" type="button">Cancel</button>
+                                  <button class="btn btn-bg-title-2 px-5" type="submit">Save</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">Lorem ipsum dolor sit amet consectetur.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()</script>
+</body>
+
+</html>
