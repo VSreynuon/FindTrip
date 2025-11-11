@@ -54,7 +54,7 @@ img{
 
 .hero {
     height: 80vh;
-    background:url("../img/pic_aobut.png") center/cover no-repeat;
+    background:url("../img/pic_aobut_01_4.jpg") center/cover no-repeat;
 
 
     animation: fadeIn 1s ease;
@@ -220,7 +220,7 @@ img{
 }
 /* Buttons and form theme */
 .btn-purple {
-  background-color: #5e17eb;
+  background-color:var(--bg-purple-halt);
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
@@ -281,6 +281,7 @@ img{
 
 
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
