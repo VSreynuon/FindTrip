@@ -1,0 +1,302 @@
+body {
+    font-family: "Kantumruy Pro", sans-serif;
+}
+:root {
+
+  /* text color */
+  --text-purple: #3b0270;
+  --text-purple-halt: #9112bc;
+  --text-red: #662222;
+  --text-red-halt:#DC0E0E;
+  --text-blue: #0c134f;
+  --text-white: #fff;
+  --text-black: #000;
+  --text-purple-light: #e1b5f0b3;
+
+  /* background color */
+  --bg-purple: #3b0270;
+  --bg-purple-halt: #9112bc;
+  --bg-red: #662222;
+  --bg-red-halt:#DC0E0E;
+  --bg-blue: #0c134f;
+  --bg-white: #fff;
+  --bg-black: #000;
+  --bg-purple-light: #e1b5f0b3;
+
+  /* button color*/
+  --btn-purple-halt: #9112bc;
+  --btn-red-halt:#DC0E0E;
+  --btn-white: #fff;
+  
+  /* icon color */
+  --icon-white: #fff;
+  --icon-purple: #3b0270;
+  --icon-bg-purple-light: #e1b5f0b3;
+
+  /* border color */
+  --border-white:#fff;
+  --border-purple-hale: #9112bc;
+  --border-red-halt: #DC0E0E;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    /* object-fit:cover; */
+}
+.bg-purple {
+    background-color: #4b0082;
+}
+
+.text-purple {
+    color: #4b0082;
+}
+
+.hero {
+    height: 80vh;
+    background:url("../img/pic_aobut.png") center/cover no-repeat;
+
+
+    animation: fadeIn 1s ease;
+}
+
+.icon-5 {
+    width: 50px;
+    height: 50px;
+    background-color: #f2e7ff;
+    margin-left: 60px;
+}
+
+.hero h1,
+.hero p {
+    font-family: "Khmer OS Siemreap", sans-serif;
+}
+
+.about-section {
+    background-color: #fafafa;
+}
+
+.img-hover img {
+    transition: all 0.4s ease;
+    border-radius: 15px;
+}
+
+.img-hover img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(75, 0, 130, 0.3);
+}
+
+.btn-purple {
+    background-color: #4b0082;
+    color: #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: #6a0dad;
+    transform: scale(1.05);
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(75, 0, 130, 0.2);
+}
+
+.hover-scale {
+    transition: all 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.1);
+}
+
+.hover-bright {
+    transition: 0.3s ease;
+}
+
+.hover-bright:hover {
+    background-color: #fff;
+    color: #4b0082;
+    box-shadow: 0 0 10px rgba(75, 0, 130, 0.5);
+}
+
+.team-card {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.team-card:hover .image-box img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 32, 248, 0.37);
+    opacity: 0;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card:hover .overlay {
+    opacity: 1;
+}
+
+.icon-box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    padding: 10px 6px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.icon-box i {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #003366;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.icon-box i:hover {
+    transform: scale(1.3);
+    color: #0056b3;
+}
+
+.text-box {
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.text-box h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text-box span {
+    font-size: 14px;
+    color: gray;
+}
+.bg-footer{
+  background-color: var(--bg-purple) !important;
+}
+.bg-icon{
+  color: var(--text-purple-halt) !important;
+  background-color: var(--bg-purple-light) !important;
+}
+/* Buttons and form theme */
+.btn-purple {
+  background-color: #5e17eb;
+  color: #fff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-purple:hover {
+  background-color: #3b0dbf;
+  color: #fff;
+}
+.text-purple {
+  color: #6a0dad;
+}
+
+.btn-purple {
+  background-color: #6a0dad;
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #8a2be2;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+}
+
+.input-purple {
+  border: 2px solid #e0b3ff;
+  transition: all 0.3s ease;
+}
+
+.input-purple:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 8px rgba(106, 13, 173, 0.4);
+}
+
+.form-box {
+  background: #d6d1d144;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 180px;
+  margin-top: 90px;
+}
+
+.form-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.2);
+}
+
+.animate-fade {
+  animation: fadeIn 1s ease-in-out;
+}
+.mission,.card{
+    background-color: var(--bg-purple-light);
+}
+.questions-section{
+    
+    background: url(../img/pic_aobut_01_1.jpg) center/cover no-repeat ;
+
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.2s ease forwards;
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
