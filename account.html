@@ -24,112 +24,145 @@
 <body class="profile">
 
   <header>
-    <nav class="navbar bg-transparent">
-      <div class="container-fluid d-block">
-        <div class="row">
-          <div class="col-10">
-            <div class="card border-0 bg-transparent border-end rounded-0 border-dark-subtle ">
-              <form class="d-flex justify-content-between " role="search">
-                <input class="form-control w-50 shadow-none" type="search" placeholder="Search" aria-label="Search" />
-                <a class="icon-head text-black btn border-0">
-                  <i class="fa-regular fa-bell pt-2 fs-5 position-relative">
-                    <div class="position-absolute rounded-circle bg-danger "
-                      style="width: 8px; height: 8px; top: 8px; right: 2px;"></div>
-                  </i>
-                </a>
-              </form>
-
+    <nav class="navbar navbar-top navbar-expand-lg d-flex flex-column fixed-top">
+      <!-- Top Contact Bar -->
+      <div class=" w-100 border-bottom border-secondary">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex justify-content-center align-items-center py-2">
+              <i class="bi bi-brightness-low-fill fs-3 text-white"></i>
+              <i class="bi bi-bell-fill fs-4 text-white ms-4"></i>
+              <select class="form-select form-select-sm fw-bold ms-4 custom-select-kh"
+                style="width: 64px; height: 40px;">
+                <option>Kh</option>
+                <option>En</option>
+              </select>
             </div>
+            <form role="search">
+              <div class="input-group">
+                <span class="position-absolute text-purple fw-bold text-center z-3" style="top: 18%;left: 85%;">
+                  <i class="bi bi-search fs-5"></i>
+                </span>
+                <input class="form-control rounded-pill fs-5 p-2 text-white shadow-lg ms-4 position-relative"
+                  type="search" placeholder=" ស្វែងរក..." aria-label="Search">
+              </div>
+            </form>
           </div>
-          <div class="col-2">
-            <div class="card border-0 bg-transparent">
-              <li class="nav-item dropdown d-flex">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <img src="assets/img/profile.jpg" alt="header-branch" class="rounded-circle me-2"
-                    style="width: 36px; height: 36px;">
-                  John
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+        </div>
+      </div>
+      <div class="container pt-2">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#"><img src="assets/img/logo-brand.jpg" alt="logo" width="100%"
+              class="rounded-circle" style="width: 60px; height: 60px;"></a>
+          <!-- <a href="#" class="mb-0 text-white text-decoration-none fs-2" style="font-family: 'Moulpali';">ស្វែងរកកន្លែងកំសាន្ត</a> -->
+          <h4 class="mb-0 text-white fs-3">ស្វែងរកកន្លែងកំសាន្ត</h4>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-hover  text-white fs-4 fw-medium" aria-current="page"
+                href="nav-profile-tab">ទំព័រដើម</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link nav-hover dropdown-toggle text-white fs-4 fw-medium" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                ខេត្ត
+              </a>
+              <ul class="dropdown-menu justify-content-start px-2 shadow border-0 rounded-3">
+                <li><a class="dropdown-item px-3" href="#">ខេត្ត កំពង់ចាម</a></li>
+                <li><a class="dropdown-item px-3" href="#">ខេត្ត សៀមរាប</a></li>
+                <li><a class="dropdown-item px-3" href="#">ខេត្ត កំពង់ធំ</a></li>
+                <li><a class="dropdown-item px-3" href="#">ខេត្ត ត្បូងឃ្មុំ</a></li>
+                <li><a class="dropdown-item px-3" href="#">ខេត្ត កំពត</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover text-white fs-4 fw-medium" aria-current="page"
+                href="contact.html">ទំនាក់ទំនង</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-hover d-block text-white fs-4 fw-medium" aria-current="page" href="#">អំពីយើង</a>
+            </li>
+          </ul>
+          <div class="d-flex ">
+            <a href="#" class="nav-link d-profile justify-content-center align-items-center rounded-circle fs-5 ms-4"
+              style="width: 50px; height: 50px;"><i class="bi bi-person-circle text-white fs-1"></i></a>
+          </div>
+          <nav class="navbar d-nav ">
+            <div class="nav flex-column bg-transparent" id="nav-tab" role="tablist">
+              <button class="nav-link text-start active  " data-bs-toggle="tab"
+                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                  class="fa-solid fa-user"></i> Account</button>
+              <button class="nav-link text-start" data-bs-toggle="tab"
+                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><i class="fa-solid fa-shield-halved"></i> Security</button>
+              <button class="nav-link text-start"  data-bs-toggle="tab"
+                data-bs-target="#nav-profile" type="button" role="tab " aria-controls="nav-profile"
+                aria-selected="false"><i class="fa-solid fa-bell"></i> Notification</button>
+              <button class="nav-link text-start" data-bs-toggle="tab"
+                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><i class="fa-solid fa-globe"></i> Language</button>
+              <button class="nav-link text-start text-danger"  data-bs-toggle="tab"
+                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                aria-selected="false"><i class="fa-solid fa-door-open"></i>
+                Leave</button>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </nav>
   </header>
   <main>
-    <section class="profile-section bg-light ">
-      <div class="container-fluid">
-        <form class="g-3 needs-validation" novalidate>
-          <div class="row">
-            <div class="col-12">
-              <div class="card border-0 bg-transparent">
-                <div class="card-body d-flex justify-content-between">
-                  <div class="title">
-                    <h1>Settings</h1>
-                    <p>.....</p>
-                  </div>
-                  <div class="button">
-                    <button class="btn btn-bg-title-1">Cancel</button>
-                    <button class="btn btn-bg-title-2" type="submit">Save Changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
     <section class="profile-section-2 bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="bg-white p-3 rounded-3 shadow ">
-              <div class="row g-1">
-                <div class="col-2 ">
-                  <div class="card pb-5 pt-3 border-0 rounded-0 pe-3">
+            <div class="card border-0 card-set mt-2 bg-white p-3 rounded-3 shadow ">
+              <div class="row g-0">
+                <div class="col-12">
+                  <div class="card card-set border-0 bg-transparent">
+                    <div class="card-body d-flex justify-content-between">
+                      <div class="title">
+                        <h1>Settings</h1>
+
+                      </div>
+                      <div class="button">
+                        <button class="btn btn-bg-title-1">Cancel</button>
+                        <button class="btn btn-bg-title-2" type="submit">Save Changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 setting">
+                  <div class="card pb-5 pt-3 border-0 border-end rounded-0">
                     <nav class="navbar navbar-expand-lg ">
-                      <button class="navbar-toggler shadow-none bo" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel" style="width: 180px;">
-                        <div class="offcanvas-body ">
-                          <div class="nav flex-column bg-transparent" id="nav-tab" role="tablist">
-                            <button class="nav-link text-start active " id="nav-home-tab" data-bs-toggle="tab"
-                              data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                              aria-selected="true"><i class="fa-solid fa-user"></i> Account</button>
-                            <button class="nav-link text-start" id="nav-profile-tab" data-bs-toggle="tab"
-                              data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                              aria-selected="false"><i class="fa-solid fa-shield-halved"></i> Security</button>
-                            <button class="nav-link text-start" id="nav-profile-tab-1" data-bs-toggle="tab"
-                              data-bs-target="#nav-profile" type="button" role="tab " aria-controls="nav-profile"
-                              aria-selected="false"><i class="fa-solid fa-bell"></i> Notification</button>
-                            <button class="nav-link text-start" id="nav-profile-tab-2" data-bs-toggle="tab"
-                              data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                              aria-selected="false"><i class="fa-solid fa-globe"></i> Language</button>
-                            <button class="nav-link text-start text-danger" id="nav-profile-tab-5" data-bs-toggle="tab"
-                              data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                              aria-selected="false"><i class="fa-solid fa-door-open"></i>
-                              Leave</button>
-                          </div>
-                        </div>
+                      <div class="nav flex-column bg-transparent" role="tablist">
+                        <button class="nav-link text-start active  " id="nav-home-tab" data-bs-toggle="tab"
+                          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                          aria-selected="true"><i class="fa-solid fa-user"></i> Account</button>
+                        <button class="nav-link text-start" id="nav-profile-tab" data-bs-toggle="tab"
+                          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                          aria-selected="false"><i class="fa-solid fa-shield-halved"></i> Security</button>
+                        <button class="nav-link text-start" id="nav-profile-tab-1" data-bs-toggle="tab"
+                          data-bs-target="#nav-profile" type="button" role="tab " aria-controls="nav-profile"
+                          aria-selected="false"><i class="fa-solid fa-bell"></i> Notification</button>
+                        <button class="nav-link text-start" id="nav-profile-tab-2" data-bs-toggle="tab"
+                          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                          aria-selected="false"><i class="fa-solid fa-globe"></i> Language</button>
+                        <button class="nav-link text-start text-danger" id="nav-profile-tab-5" data-bs-toggle="tab"
+                          data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                          aria-selected="false"><i class="fa-solid fa-door-open"></i>
+                          Leave</button>
                       </div>
                     </nav>
                   </div>
                 </div>
-                <div class="col-112 col-md-10 ">
-                  <div class="card border-0 px-5 rounded-0 border-start p-3">
+                <div class="col-12 col-md-10 ">
+                  <div class="card border-0 px-5 rounded-0 b-s p-3">
                     <div class="tab-content" id="nav-tabContent">
                       <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                         aria-labelledby="nav-home-tab" tabindex="0">
@@ -305,6 +338,63 @@
         }, false)
       })
     })()</script>
+  <script>
+    const modals = ['#menuModal', '#bookingModal', '#thirdModal'];
+
+    modals.forEach(id => {
+      const modal = document.querySelector(id);
+      modal.addEventListener('show.bs.modal', (e) => {
+        const openModals = document.querySelectorAll('.modal.show');
+        openModals.forEach(m => m.classList.add('opacity-75'));
+      });
+
+      modal.addEventListener('hidden.bs.modal', (e) => {
+        const openModals = document.querySelectorAll('.modal.show');
+        openModals.forEach(m => m.classList.remove('opacity-75'));
+      });
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- Nav and tab -->
+  <script>
+    const triggerTabList = document.querySelectorAll('#myTab button')
+    triggerTabList.forEach(triggerEl => {
+      const tabTrigger = new bootstrap.Tab(triggerEl)
+
+      triggerEl.addEventListener('click', event => {
+        event.preventDefault()
+        tabTrigger.show()
+      })
+    })
+  </script>
+  <!-- navbar scroll -->
+  <script>
+    window.addEventListener("scroll", function () {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
 </body>
 
 </html>

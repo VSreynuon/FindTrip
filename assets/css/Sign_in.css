@@ -96,6 +96,9 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 8px !important;
 }
+.letter-spacing{
+    font-family: "Kantumruy Pro", "Moulpali", "Poppins" !important;
+}
 .social-btn {
     display: flex !important;
     align-items: center !important;

@@ -68,8 +68,8 @@
 }
 
 body {
-   line-height: 1.6;
-   font-family: "Hanuman", "Poppins";
+    font-family: "Kantumruy Pro", "Moulpali", "Poppins" !important;
+    line-height: 1.6 !important;
     height: 100vh;
     overflow: hidden;
     background-color: rgb(70, 70, 70);
