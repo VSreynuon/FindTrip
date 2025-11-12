@@ -276,12 +276,38 @@ img{
     background-color: var(--bg-purple-light);
 }
 .questions-section{
-    
     background: url(../img/pic_aobut_01_1.jpg) center/cover no-repeat ;
-
-
 }
-
+.team-member{
+      background: #9FE3FA;
+background: linear-gradient(to right, #9FE3FA 28%, #AD16C1 95%);  
+}
+.about-section{
+    background: #9FE3FA;
+background: linear-gradient(to right, #9FE3FA 28%, #AD16C1 95%);
+}
+.mission{
+    background: #9FE3FA;
+background: linear-gradient(to right, #9FE3FA 28%, #AD16C1 95%);
+}
+.card-about{
+        /* From https://css.glass */
+background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(44, 41, 41, 0.479);
+backdrop-filter: blur(1.2px);
+-webkit-backdrop-filter: blur(1.2px);
+border: 1px solid rgba(255, 255, 255, 0.24);
+}
+.card-mission{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.03);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(36, 35, 35, 0.425);
+backdrop-filter: blur(1.2px);
+-webkit-backdrop-filter: blur(1.2px);
+border: 1px solid rgba(255, 255, 255, 0.24);
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
