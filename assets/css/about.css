@@ -44,6 +44,53 @@ img{
     height: 100%;
     /* object-fit:cover; */
 }
+.navbar {
+  background-color: var(--bg-purple) !important;
+}
+.nav-link {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+.nav-hover:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 14px !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: var(--text-white) !important;
+}
+.nav-tab {
+  margin: 8px !important;
+  border-radius: 4px !important;
+  color: var(--text-black) !important;
+}
+.nav-pill .nav-tab.active {
+  margin: 8px !important;
+  border-radius: 4px !important;
+  color: var(--text-white) !important;
+  border-color: var(--border-white) !important;
+  background-color: var(--bg-purple-halt) !important;
+}
+.btn-signin {
+  padding: 10px 20px !important;
+  color: var(--text-white) !important;
+  border-color: var(--border-white) !important;
+  background-color: var(--bg-purple-halt) !important;
+}
+.btn-signin:hover {
+  padding: 10px 20px !important;
+  border-color: var(--border-white) !important;
+  background-color: var(--bg-red-halt) !important;
+}
+.btn-signup {
+  padding: 10px 20px !important;
+  color: var(--text-white) !important;
+  border-color: var(--border-white) !important;
+  background-color: var(--bg-purple-halt) !important;
+}
+.btn-signup:hover {
+  padding: 10px 20px !important;
+  border-color: var(--border-white) !important;
+  background-color: var(--bg-red-halt) !important;
+}
 .bg-purple {
     background-color: #4b0082;
 }
