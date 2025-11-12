@@ -98,6 +98,7 @@ body {
 
 /* button style */
 .btn-watch-detail {
+  padding: 10px 20px !important;
   color: var(--text-white) !important;
   background-color: var(--bg-purple-halt) !important;
 }
