@@ -300,10 +300,10 @@ backdrop-filter: blur(1.2px);
 border: 1px solid rgba(255, 255, 255, 0.24);
 }
 .card-mission{
-    /* From https://css.glass */
+        /* From https://css.glass */
 background: rgba(255, 255, 255, 0.03);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(36, 35, 35, 0.425);
+box-shadow: 0 4px 30px rgba(44, 41, 41, 0.479);
 backdrop-filter: blur(1.2px);
 -webkit-backdrop-filter: blur(1.2px);
 border: 1px solid rgba(255, 255, 255, 0.24);
