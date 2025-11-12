@@ -47,7 +47,8 @@
                                         </div>
                                         <div class="mb-3">
                                             <div class=" position-relative">
-                                                <input  type="password" id="password" placeholder="password" class="form-control p-2  blur-input">
+                                                <input type="password" id="password" placeholder="password"
+                                                    class="form-control p-2  blur-input">
                                                 <i
                                                     class="fas fa-lock position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                                             </div>
@@ -55,7 +56,8 @@
                                                 <div class="show-passwork">
                                                     <button type="button"
                                                         class="border-0 bg-transparent fs-6 text-black-50">
-                                                        <input id="togglePassword" type="checkbox" class="form-check-input fs-6 ">
+                                                        <input id="togglePassword" type="checkbox"
+                                                            class="form-check-input fs-6 ">
                                                         Show passwork</button>
                                                 </div>
                                                 <a href="#exampleModal" data-bs-toggle="modal"
@@ -165,7 +167,51 @@
                             </form>
                         </div>
                         <div class="modal-footer d-flex justify-content-center border-0 gap-4">
-                            <a href="" class="btn btn-dark  btn-lg">ផ្ទៀងផ្ទាត់​ OTP</a>
+                            <button type="submit" data-bs-target="#password-c" data-bs-toggle="modal"
+                               class="btn btn-dark  btn-lg">ផ្ទៀងផ្ទាត់​ OTP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade  " id="password-c" tabindex="-1" aria-labelledby="exampleModalLabel-1"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content py-5">
+                        <div class="modal-header border-0 position-relative">
+                            <i class="fa-solid fa-circle-check text-primary position-absolute "
+                                style="bottom: 60px; left: 230px; font-size: 40px;"></i>
+                            <h1 class="modal-title fs-4  m-auto mt-3" id="exampleModalLabel-1">សូមមេត្តាបញ្ជូលលេខ OTP
+                            </h1>
+                        </div>
+                        <div class="modal-body border-0">
+
+                            <form>
+                                <div class="d-flex justify-content-center gap-3">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="validationCustom03"
+                                                class="form-label">បញ្ចូលលេខសម្ញាត់ថ្មី</label>
+                                            <input type="password" class="form-control" id="validationCustom03"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                សូមបំពេញលេខសម្ញាត់
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="validationCustom05"
+                                                class="form-label">បញ្ចូលលេខសម្ញាត់ផ្ទៀងផ្ទត់</label>
+                                            <input type="password" class="form-control" id="validationCustom05" value=""
+                                                required>
+                                            <div class="invalid-feedback">
+                                                សូមបំពេញលេខសម្ញាត់
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center border-0 gap-4">
+                             <button type="button" class="btn btn-dark  btn-lg" data-bs-dismiss="modal">រក្សាទុក</button>
                         </div>
                     </div>
                 </div>

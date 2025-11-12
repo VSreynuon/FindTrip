@@ -108,40 +108,41 @@ body {
   /* Focus States */
   --focus-ring: rgba(59, 130, 246, 0.1);
 }
-
+.mt-section-1 {
+  margin-top: 180px;
+}
 .profile-section-2 {
   margin-bottom: 10px;
-  margin-top: 160px;
 }
 
 .btn-bg-title-1 {
-  border: 1px solid var(--secondary-purple) !important;
-  color: var(--secondary-purple) !important;
+  border: 1px solid var(--btn-purple-halt) !important;
+  color: var(--btn-purple-halt) !important;
 }
 
 .btn-bg-title-1:hover {
-  background-color: var(--secondary-purple) !important;
+  background-color: var(--btn-purple-halt) !important;
   color: white !important;
 }
 
 .btn-bg-title-2 {
-  background-color: var(--secondary-purple) !important;
+  background-color: var(--btn-purple-halt) !important;
   color: white !important;
 }
 
 .btn-bg-title-2:hover {
-  border: 1px solid var(--secondary-purple) !important;
-  color: var(--secondary-purple) !important;
+  border: 1px solid var(--btn-purple-halt) !important;
+  color: var(--btn-purple-halt) !important;
   background-color: var(--bg-white) !important;
 }
 
 .btn-bg-title-9 {
-  border: 1px solid var(--secondary-purple) !important;
-  color: var(--secondary-purple) !important;
+  border: 1px solid var(--btn-purple-halt) !important;
+  color: var(--btn-purple-halt) !important;
 }
 
 .btn-bg-title-9:hover {
-  background-color: var(--secondary-purple) !important;
+  background-color: var(--btn-purple-halt) !important;
   color: white !important;
 }
 
@@ -204,7 +205,6 @@ body {
   border-color: var(--border-white) !important;
   background-color: var(--bg-purple-halt) !important;
 }
-
 
 /* Sign in & Sign up style */
 .btn-signin {
@@ -344,9 +344,6 @@ body {
   .setting {
     display: block;
   }
-   .d-nav {
-    display: none !important;
-  }
   .d-profile{
     display: block !important;
   }
@@ -354,13 +351,6 @@ body {
 @media (max-width: 992px) {
   .setting {
     display: none;
-  }
-  .profile-section-2 {
-
-    margin-top: 160px;
-  }
-  .d-nav {
-    display: block !important;
   }
     .d-profile{
     display: none !important;
@@ -372,6 +362,34 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
   }
+}
+.social-btn {
+    display: flex !important;
+    align-items: center!important;
+    transition: all 0.3s ease !important;
+    justify-content: center;
+}
+.social-btn:hover {
+    transform: translateY(-3px);
+    
+}
+.social-btn:nth-child(1):hover {
+    background-color: #1877f2 !important;
+}
+
+
+.social-btn:nth-child(2):hover {
+    background-color: #1da1f2 !important;
+}
+
+
+.social-btn:nth-child(3):hover {
+    background-color: #0088cc !important;
+}
+
+
+.social-btn:nth-child(4):hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
 }
 
 

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification</title>
+    <!-- link css  style -->
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="stylesheet" href="assets/Bootstrap/bootstrap.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://css.glass ">
+
+</head>
+
+<body class="profile bg-light">
+
+    <header>
+        <nav class="navbar navbar-top navbar-expand-lg d-flex flex-column fixed-top">
+            <!-- Top Contact Bar -->
+            <div class=" w-100 border-bottom border-secondary">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex justify-content-center align-items-center py-2">
+                            <i class="bi bi-brightness-low-fill fs-3 text-white"></i>
+                            <i class="bi bi-bell-fill fs-4 text-white ms-4"></i>
+                            <select class="form-select form-select-sm fw-bold ms-4 custom-select-kh"
+                                style="width: 64px; height: 40px;">
+                                <option>Kh</option>
+                                <option>En</option>
+                            </select>
+                        </div>
+                        <form role="search">
+                            <div class="input-group">
+                                <span class="position-absolute text-purple fw-bold text-center z-3"
+                                    style="top: 18%;left: 85%;">
+                                    <i class="bi bi-search fs-5"></i>
+                                </span>
+                                <input
+                                    class="form-control rounded-pill fs-5 p-2 text-white shadow-lg ms-4 position-relative"
+                                    type="search" placeholder=" ស្វែងរក..." aria-label="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-2">
+                <div class="d-flex align-items-center ">
+                    <a class="navbar-brand" href="#"><img src="assets/img/logo-brand.jpg" alt="logo" width="100%"
+                            class="rounded-circle" style="width: 60px; height: 60px;"></a>
+                    <!-- <a href="#" class="mb-0 text-white text-decoration-none fs-2" style="font-family: 'Moulpali';">ស្វែងរកកន្លែងកំសាន្ត</a> -->
+                    <h4 class="mb-0 text-white fs-3">ស្វែងរកកន្លែងកំសាន្ត</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover  text-white fs-4 fw-medium" aria-current="page"
+                                href="nav-profile-tab">ទំព័រដើម</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-hover dropdown-toggle text-white fs-4 fw-medium" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                ខេត្ត
+                            </a>
+                            <ul class="dropdown-menu justify-content-start px-2 shadow border-0 rounded-3">
+                                <li><a class="dropdown-item px-3" href="#">ខេត្ត កំពង់ចាម</a></li>
+                                <li><a class="dropdown-item px-3" href="#">ខេត្ត សៀមរាប</a></li>
+                                <li><a class="dropdown-item px-3" href="#">ខេត្ត កំពង់ធំ</a></li>
+                                <li><a class="dropdown-item px-3" href="#">ខេត្ត ត្បូងឃ្មុំ</a></li>
+                                <li><a class="dropdown-item px-3" href="#">ខេត្ត កំពត</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover text-white fs-4 fw-medium" aria-current="page"
+                                href="contact.html">ទំនាក់ទំនង</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-hover d-block text-white fs-4 fw-medium me-5" aria-current="page"
+                                href="#">អំពីយើង</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ">
+                        <a href="#"
+                            class="nav-link d-profile justify-content-center align-items-center rounded-circle fs-5 ms-5"
+                            style="width: 50px; height: 50px;"><i class="bi bi-person-circle text-white fs-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="mt-section-1 bg-light">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-sm-12">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="card border-0 shadow-lg bg-nav-tab-menu mb-4 position-sticky">
+                                <div class="card-body">
+                                    <ul class="nav nav-pill" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a href="account.html" class="nav-link nav-tab fs-4 fw-medium  "><i
+                                                    class="fa-solid fa-user"></i>
+                                                គណនី</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="sec-urity.html" class="nav-link nav-tab fs-4 fw-medium"><i
+                                                    class="fa-solid fa-shield-halved"></i>
+                                                ពាក្យសម្ញាត់</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="notification.html" class="nav-link nav-tab  active fs-4 fw-medium">
+                                                <i class="fa-solid fa-bell"></i>
+                                                ការផ្តល់ដំណឹង</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="language.html" class="nav-link nav-tab fs-4 fw-medium"><i
+                                                    class="fa-solid fa-globe"></i>
+                                                ភាសា</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="connection.html" class="nav-link nav-tab fs-4 fw-medium"><i
+                                                    class="fa-solid fa-link"></i>
+                                                ការភ្ជាប់គណនី</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a href="delete.html" class="nav-link nav-tab fs-4 fw-medium"><i
+                                                    class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                លុបគណនី</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-set border-0 bg-transparent">
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="title">
+                                    <h1>ការកំណត់
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="profile-section-2 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card border-0 card-set mt-2 bg-white p-3 rounded-3 shadow ">
+                            <div class="row g-0">
+                                <div class="col-12  ">
+                                    <div class="card border-0 px-5 rounded-0 b-s p-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card px-3 border-0 border-bottom rounded-0">
+                                                    <div class="card-body pb-0">
+                                                        <div class="title-account">
+                                                            <h3 class="fw-bold">កំណត់ការផ្តល់ដំំណឹង</h3>
+                                                            <p class="text-black-50 pb-0">
+                                                                អ្នកអាចធ្វើការកំណត់ការជូនដំណឹងរបស់បាន</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card border-0 rounded-0 px-3">
+                                                    <div class="row">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card border-0">
+                                                    <div class="card-body">
+                                                        <h5>ការផ្តល់ដំំណឹងទាំងអស់</h5>
+                                                    </div>
+                                                    <form class="row ms-3 needs-validation" novalidate>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault1">
+                                                            <label class="form-check-label" for="radioDefault1">
+                                                                បិទការផ្តល់ដំណឹង
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault2" checked>
+                                                            <label class="form-check-label" for="radioDefault2">
+                                                                បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault3" checked>
+                                                            <label class="form-check-label" for="radioDefault3">
+                                                                បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card border-0">
+                                                    <div class="card-body">
+                                                        <h5>ការផ្តល់ដំំណឹងអំពីព៏ត័មានថ្មីៗ</h5>
+                                                    </div>
+                                                    <form class="row ms-3 needs-validation" novalidate>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault11">
+                                                            <label class="form-check-label" for="radioDefault1">
+                                                                បិទការផ្តល់ដំណឹង
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault21" checked>
+                                                            <label class="form-check-label" for="radioDefault2">
+                                                                បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault31" checked>
+                                                            <label class="form-check-label" for="radioDefault3">
+                                                                បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card border-0">
+                                                    <div class="card-body">
+                                                        <h5>ផ្តល់ដំំណឹងអំពីធាតុអាកាសនិងអាកាសធាតុ</h5>
+                                                    </div>
+                                                    <form class="row ms-3 needs-validation" novalidate>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault4">
+                                                            <label class="form-check-label" for="radioDefault1">
+                                                                បិទការផ្តល់ដំណឹង
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault5" checked>
+                                                            <label class="form-check-label" for="radioDefault2">
+                                                                បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault6" checked>
+                                                            <label class="form-check-label" for="radioDefault3">
+                                                                បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card border-0">
+                                                    <div class="card-body">
+                                                        <h5>ផ្តល់ដំំណឹងអំពីការបញ្ចុសតម្លៃ</h5>
+                                                    </div>
+                                                    <form class="row ms-3 needs-validation" novalidate>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault7">
+                                                            <label class="form-check-label" for="radioDefault1">
+                                                                បិទការផ្តល់ដំណឹង
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault8" checked>
+                                                            <label class="form-check-label" for="radioDefault2">
+                                                                បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault9" checked>
+                                                            <label class="form-check-label" for="radioDefault3">
+                                                                បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="card border-0">
+                                                    <div class="card-body">
+                                                        <h5>ផ្តល់ដំំណឹងអំពីតំបន់អសន្តិសុខ និងការបោកប្រាស់នាៗ</h5>
+                                                    </div>
+                                                    <form class="row ms-3 needs-validation" novalidate>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault10">
+                                                            <label class="form-check-label" for="radioDefault1">
+                                                                បិទការផ្តល់ដំណឹង
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault112" checked>
+                                                            <label class="form-check-label" for="radioDefault2">
+                                                                បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="radioDefault" id="radioDefault12" checked>
+                                                            <label class="form-check-label" for="radioDefault3">
+                                                                បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                                            </label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-bg-title-1 me-3" type="button">បោះបង់</button>
+                                        <button class="btn btn-bg-title-2 px-5" type="submit">រក្សាទុក​</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()</script>
+    <script>
+        const modals = ['#menuModal', '#bookingModal', '#thirdModal'];
+
+        modals.forEach(id => {
+            const modal = document.querySelector(id);
+            modal.addEventListener('show.bs.modal', (e) => {
+                const openModals = document.querySelectorAll('.modal.show');
+                openModals.forEach(m => m.classList.add('opacity-75'));
+            });
+
+            modal.addEventListener('hidden.bs.modal', (e) => {
+                const openModals = document.querySelectorAll('.modal.show');
+                openModals.forEach(m => m.classList.remove('opacity-75'));
+            });
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Nav and tab -->
+    <script>
+        const triggerTabList = document.querySelectorAll('#myTab button')
+        triggerTabList.forEach(triggerEl => {
+            const tabTrigger = new bootstrap.Tab(triggerEl)
+
+            triggerEl.addEventListener('click', event => {
+                event.preventDefault()
+                tabTrigger.show()
+            })
+        })
+    </script>
+    <!-- navbar scroll -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            if (window.scrollY > 80) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+
+</html>
