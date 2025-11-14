@@ -160,7 +160,7 @@ body {
         display: none;
     }
     .sign-in-section{
-        width: 80%;
+        width: 60%;
     }
 }
 @media (max-width: 575px) {
