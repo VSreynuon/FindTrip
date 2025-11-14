@@ -85,7 +85,8 @@
                 href="contact.html">ទំនាក់ទំនង</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-hover d-block text-white fs-4 fw-medium me-5" aria-current="page" href="#">អំពីយើង</a>
+              <a class="nav-link nav-hover d-block text-white fs-4 fw-medium me-5" aria-current="page"
+                href="#">អំពីយើង</a>
             </li>
           </ul>
           <div class="d-flex ">
@@ -97,51 +98,9 @@
     </nav>
   </header>
   <main>
-    <section class="mt-section-1 bg-light">
+    <section class="profile-section-2 bg-light">
       <div class="container">
-        <div class="row g-5">
-          <div class="col-sm-12">
-            <div class="d-flex align-items-center justify-content-center">
-              <div class="card border-0 shadow-lg bg-nav-tab-menu mb-4 position-sticky">
-                <div class="card-body">
-                  <ul class="nav nav-pill" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <a href="account.html" class="nav-link nav-tab fs-4 fw-medium  active"><i
-                          class="fa-solid fa-user"></i>
-                        គណនី</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a href="sec-urity.html" class="nav-link nav-tab fs-4 fw-medium"><i
-                          class="fa-solid fa-shield-halved"></i>
-                        ពាក្យសម្ញាត់</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a href="notification.html" class="nav-link nav-tab fs-4 fw-medium"> <i class="fa-solid fa-bell"></i>
-                        ការផ្តល់ដំណឹង</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a href="language.html" class="nav-link nav-tab fs-4 fw-medium"><i class="fa-solid fa-globe"></i>
-                        ភាសា</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a href="connection.html" class="nav-link nav-tab fs-4 fw-medium"><i class="fa-solid fa-link"></i>
-                        ការភ្ជាប់គណនី</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a href="delete.html" class="nav-link nav-tab fs-4 fw-medium"><i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        លុបគណនី</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-light">
-      <div class="container">
-        <div class="row">
+        <div class="row g-3">
           <div class="col-12">
             <div class="card card-set border-0 bg-transparent">
               <div class="card-body d-flex justify-content-between">
@@ -152,71 +111,531 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="profile-section-2 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="card border-0 card-set mt-2 bg-white p-3 rounded-3 shadow ">
-              <div class="row g-0">
-                <div class="col-12  ">
-                  <div class="card border-0 px-5 rounded-0 b-s p-3">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card px-3 border-0 border-bottom rounded-0">
-                          <div class="card-body pb-0">
-                            <div class="title-account">
-                              <h3 class="fw-bold">កែប្រែប្រវត្តិរូប</h3>
-                              <p class="text-black-50 pb-0">អ្នកអាចផ្លាស់ប្តូរប្រវត្តិរូបរបស់អ្នកនិងរូបភាព</p>
+          <div class="col-sm-12 col-lg-2">
+            <div class="card border-0 shadow-lg bg-nav-tab-menu p-1  position-sticky">
+              <div class="card-body">
+                <ul class="nav flex-column" id="pills-tab-1" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a href="#home-tab-pane" data-bs-toggle="tab" class="nav-link nav-tab  fw-medium active "><i
+                        class="fa-solid fa-user"></i>
+                      គណនី</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#profile-tab-pane" data-bs-toggle="tab" class="nav-link nav-tab  fw-medium"><i
+                        class="fa-solid fa-shield-halved"></i>
+                      ពាក្យសម្ញាត់</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#notification-tab-pane" data-bs-toggle="tab" class="nav-link nav-tab  fw-medium"> <i class="fa-solid fa-bell"></i>
+                      ការផ្តល់ដំណឹង</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#language-tab-pane" data-bs-toggle="tab" class="nav-link nav-tab  fw-medium"><i class="fa-solid fa-globe"></i>
+                      ភាសា</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#connection-tab-pane" data-bs-toggle="tab" class="nav-link nav-tab  fw-medium"><i class="fa-solid fa-link"></i>
+                      ការភ្ជាប់គណនី</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a href="#delete-tab-pane" data-bs-toggle="tab" class="nav-link nav-tab  fw-medium"><i
+                        class="fa-solid fa-arrow-right-from-bracket"></i>
+                      លុបគណនី</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10">
+            <div class="card border-0 card-set  bg-white p-3 rounded-3 shadow ">
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                  tabindex="0">
+                  <div class="row g-0">
+                    <div class="col-12  ">
+                      <div class="card border-0 px-5 rounded-0 b-s p-3">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">កែប្រែប្រវត្តិរូប</h3>
+                                  <p class="text-black-50 pb-0">អ្នកអាចផ្លាស់ប្តូរប្រវត្តិរូបរបស់អ្នកនិងរូបភាព</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="card border-0 rounded-0 px-3">
-                          <div class="row">
-                            <div class="col-12 col-lg-6">
-                              <div class="card border-0">
-                                <div class="card-body pb-0">
-                                  <p class="fw-bold pb-0">ផ្លាស់ប្តូរ រូបភាពគណនី</p>
-                                </div>
-                                <div class="profile-img-title d-flex ">
-                                  <div class="img position-relative">
-                                    <button class=" border-0 bg-transparent btn-hover" type="button">
-                                      <img src="assets/img/profile.jpg" alt="profile"
-                                        class="rounded-circle border shadow-sm ms-2 "
-                                        style="width: 62px; height: 62px;">
-                                      <div class="icon-img-profile badge position-absolute"
-                                        style="bottom: 9px; left: 45px;">
-                                        <i class="fa-solid fa-cloud-arrow-up text-black fs-6"></i>
+                          <div class="col-12">
+                            <div class="card border-0 rounded-0 px-3">
+                              <div class="row">
+                                <div class="col-12 col-lg-6">
+                                  <div class="card border-0">
+                                    <div class="card-body pb-0">
+                                      <p class="fw-bold pb-0">ផ្លាស់ប្តូរ រូបភាពគណនី</p>
+                                    </div>
+                                    <div class="profile-img-title d-flex ">
+                                      <div class="img position-relative">
+                                        <button class=" border-0 bg-transparent btn-hover" type="button">
+                                          <img src="assets/img/profile.jpg" alt="profile"
+                                            class="rounded-circle border shadow-sm ms-2 "
+                                            style="width: 62px; height: 62px;">
+                                          <div class="icon-img-profile badge position-absolute"
+                                            style="bottom: 9px; left: 45px;">
+                                            <i class="fa-solid fa-cloud-arrow-up text-black fs-6"></i>
+                                          </div>
+                                        </button>
                                       </div>
-                                    </button>
+                                      <div class="title-profile-all">
+                                        <button class="fw-bold pb-0 title-profile border-0 bg-transparent">John
+                                          Doe</button>
+                                        <p class="title-profile-p p-0 ps-2">
+                                          Role/Title<br>ទីតាំង</p>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="title-profile-all">
-                                    <button class="fw-bold pb-0 title-profile border-0 bg-transparent">John
-                                      Doe</button>
-                                    <p class="title-profile-p p-0 ps-2">
-                                      Role/Title<br>ទីតាំង</p>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                  <div class="card border-0 mt-md-0 mt-lg-5 ">
+                                    <div class="row">
+                                      <div class="col-md-6">
+                                        <div class="card border-0 mt-4 ">
+                                          <label class="input-group-text btn py-2 rounded-3 btn-bg-title-2"
+                                            for="inputGroupFile01">ផ្លាស់ប្តូរ រូបភាព</label>
+                                          <input type="file" class="d-none" id="inputGroupFile01">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="card border-0 mt-4  ">
+                                          <button class="btn-bg-title-9 rounded-3  py-2">លុប</button>
+                                        </div>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col-12 col-lg-6">
-                              <div class="card border-0 mt-md-0 mt-lg-5 ">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="card border-0 mt-4 ">
-                                      <label class="input-group-text btn py-2 rounded-3 btn-bg-title-2"
-                                        for="inputGroupFile01">ផ្លាស់ប្តូរ រូបភាព</label>
-                                      <input type="file" class="d-none" id="inputGroupFile01">
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body pb-0">
+                                <p class="fw-bold pb-0">ប្រវត្តិរូប និង​ អាសយដ្ឋាន</p>
+                              </div>
+                              <form class="row g-3 needs-validation" novalidate>
+                                <div class="col-md-6">
+                                  <label for="validationCustom01" class="form-label">នាមត្រូកូ</label>
+                                  <input type="text" class="form-control" id="validationCustom01" value="John" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
+                                  <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="country" class="form-label">ជ្រើសរើស​ ប្រទេស</label>
+                                  <select id="country" class="form-select " name="country" required>
+                                    <option value="" disabled selected>Select your country
+                                    </option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Antigua and Barbuda">Antigua and Barbuda
+                                    </option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a valid state.
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom03" class="form-label">ទីក្រុង</label>
+                                  <input type="text" class="form-control" id="validationCustom03" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom05" class="form-label">លេខ ទំនាក់ទំនង</label>
+                                  <input type="tel" class="form-control" id="validationCustom05" value="" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="validationCustom06" class="form-label">Email
+                                    address</label>
+                                  <input type="tel" class="form-control" id="validationCustom06" value=""
+                                    placeholder="name@example.com" required>
+                                  <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button class="btn btn-bg-title-1 me-3" type="button">បោះបង់</button>
+                                  <button class="btn btn-bg-title-2 px-5" type="submit">រក្សាទុក​</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                  tabindex="0">
+                  <div class="row g-0">
+                    <div class="col-12  ">
+                      <div class="card border-0 px-5 rounded-0 b-s p-3">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">ការកំណត់ពាក្យសម្ងាត់</h3>
+                                  <p class="text-black-50 pb-0">
+                                    អ្នកអាចធ្វើការផ្លាស់ប្តូរពាក្យសម្ងាត់របស់អ្នកដើម្បីធានាសុវត្ថិភាព</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0 rounded-0 px-3">
+                              <div class="row">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <form class="row g-3 mt-4 needs-validation" novalidate>
+                                <div class="col-12">
+                                  <label for="validationCustom011" class="form-label">បញ្ចូលលេខសម្ញាត់ចាស់</label>
+                                  <input type="password" class="form-control" id="validationCustom011" value="John"
+                                    required>
+                                  <div class="invalid-feedback">
+                                    សូមបំពេញលេខសម្ញាត់
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <label for="validationCustom031" class="form-label">បញ្ចូលលេខសម្ញាត់ថ្មី</label>
+                                  <input type="password" class="form-control" id="validationCustom031" required>
+                                  <div class="invalid-feedback">
+                                    សូមបំពេញលេខសម្ញាត់
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <label for="validationCustom051" class="form-label">បញ្ចូលលេខសម្ញាត់ផ្ទៀងផ្ទត់</label>
+                                  <input type="password" class="form-control" id="validationCustom051" value="" required>
+                                  <div class="invalid-feedback">
+                                    សូមបំពេញលេខសម្ញាត់
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                  <button class="btn btn-bg-title-1 me-3" type="button">បោះបង់</button>
+                                  <button class="btn btn-bg-title-2 px-5" type="submit">រក្សាទុក​</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="notification-tab-pane" role="tabpanel" aria-labelledby="notification-tab"
+                  tabindex="0">
+                  <div class="row g-0">
+                    <div class="col-12  ">
+                      <div class="card border-0 px-5 rounded-0 b-s p-3">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">កំណត់ការផ្តល់ដំំណឹង</h3>
+                                  <p class="text-black-50 pb-0">
+                                    អ្នកអាចធ្វើការកំណត់ការជូនដំណឹងរបស់បាន</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0 rounded-0 px-3">
+                              <div class="row">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body">
+                                <h5>ការផ្តល់ដំំណឹងទាំងអស់</h5>
+                              </div>
+                              <form class="row ms-3 needs-validation" novalidate>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationAll" id="radioDefault1">
+                                  <label class="form-check-label" for="radioDefault1">
+                                    បិទការផ្តល់ដំណឹង
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationAll" id="radioDefault2" checked>
+                                  <label class="form-check-label" for="radioDefault2">
+                                    បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationAll" id="radioDefault3">
+                                  <label class="form-check-label" for="radioDefault3">
+                                    បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body">
+                                <h5>ការផ្តល់ដំំណឹងអំពីព៏ត័មានថ្មីៗ</h5>
+                              </div>
+                              <form class="row ms-3 needs-validation" novalidate>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationNews" id="radioDefault11">
+                                  <label class="form-check-label" for="radioDefault11">
+                                    បិទការផ្តល់ដំណឹង
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationNews" id="radioDefault21" checked>
+                                  <label class="form-check-label" for="radioDefault21">
+                                    បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationNews" id="radioDefault31">
+                                  <label class="form-check-label" for="radioDefault31">
+                                    បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body">
+                                <h5>ផ្តល់ដំំណឹងអំពីធាតុអាកាសនិងអាកាសធាតុ</h5>
+                              </div>
+                              <form class="row ms-3 needs-validation" novalidate>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationWeather" id="radioDefault4">
+                                  <label class="form-check-label" for="radioDefault4">
+                                    បិទការផ្តល់ដំណឹង
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationWeather" id="radioDefault5" checked>
+                                  <label class="form-check-label" for="radioDefault5">
+                                    បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationWeather" id="radioDefault6">
+                                  <label class="form-check-label" for="radioDefault6">
+                                    បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body">
+                                <h5>ផ្តល់ដំំណឹងអំពីការបញ្ចុសតម្លៃ</h5>
+                              </div>
+                              <form class="row ms-3 needs-validation" novalidate>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationDiscount" id="radioDefault7">
+                                  <label class="form-check-label" for="radioDefault7">
+                                    បិទការផ្តល់ដំណឹង
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationDiscount" id="radioDefault8" checked>
+                                  <label class="form-check-label" for="radioDefault8">
+                                    បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationDiscount" id="radioDefault9">
+                                  <label class="form-check-label" for="radioDefault9">
+                                    បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body">
+                                <h5>ផ្តល់ដំំណឹងអំពីតំបន់អសន្តិសុខ និងការបោកប្រាស់នាៗ</h5>
+                              </div>
+                              <form class="row ms-3 needs-validation" novalidate>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationSecurity" id="radioDefault10">
+                                  <label class="form-check-label" for="radioDefault10">
+                                    បិទការផ្តល់ដំណឹង
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationSecurity" id="radioDefault112" checked>
+                                  <label class="form-check-label" for="radioDefault112">
+                                    បើកការផ្ដល់ដំណឹងនៅពេលប្រើគេហទំព័រ
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio"
+                                    name="radioNotificationSecurity" id="radioDefault12">
+                                  <label class="form-check-label" for="radioDefault12">
+                                    បើកការផ្ដល់ដំណឹងគ្រប់ពេល
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn btn-bg-title-1 me-3" type="button">បោះបង់</button>
+                        <button class="btn btn-bg-title-2 px-5" type="submit">រក្សាទុក​</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="language-tab-pane" role="tabpanel" aria-labelledby="language-tab"
+                  tabindex="0">
+                  <div class="row g-0">
+                    <div class="col-12  ">
+                      <div class="card border-0 px-5 rounded-0 b-s p-3">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">ការកំណត់ភាសា</h3>
+                                  <p class="text-black-50 pb-0">
+                                    អ្នកអាចធ្វើការជ្រើសរើសភាសាដែលអ្នកចង់ផ្លាស់ប្តូរតាមរយៈភាសាខាងក្រោមនេះ
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body pb-0">
+                                <p class="fw-bold fs-5 pb-0">ភាសាដែលអ្នកជ្រើសរើស</p>
+                              </div>
+                              <div class="row g-5">
+                                <div class="col-md-6">
+                                  <a href="#exampleModal-2" data-bs-toggle="modal"
+                                    class="btn w-100 d-flex btn-light  shadow-sm">
+                                    <img src="assets/img/country-option/cambodia.jpg"
+                                      class="rounded-circle me-3 object-fit-cover shadow-sm"
+                                      style="width: 40px; height: 40px;">
+                                    <div class="fs-3 fw-medium">
+                                      ភាសាខ្មែរ
                                     </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-6">
+                                  <a href="#exampleModal-2" data-bs-toggle="modal"
+                                    class="btn w-100 d-flex btn-light fs-3  shadow-sm">
+                                    <img src="assets/img/country-option/english.webp"
+                                      class="rounded-circle me-3 object-fit-cover shadow-sm"
+                                      style="width: 40px; height: 40px;">
+                                    <div class="fs-3 fw-medium">
+                                      អង់គ្លេស៍
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="card border-0 mt-4">
+                                <div class="card-body pb-0">
+                                  <p class="fw-bold fs-5 pb-0 ">ភាសាផ្សេងៗទៀត</p>
+                                </div>
+                                <div class="row g-5">
+                                  <div class="col-md-6">
+                                    <a href="#exampleModal" data-bs-toggle="modal"
+                                      class="btn w-100  btn-light d-flex  shadow-sm">
+                                      <img src="assets/img/country-option/france.png"
+                                        class="rounded-circle me-3 object-fit-cover shadow-sm"
+                                        style="width: 40px; height: 40px;">
+                                      <div class="fs-3 fw-medium">
+                                        បារាំង
+                                      </div>
+                                    </a>
                                   </div>
                                   <div class="col-md-6">
-                                    <div class="card border-0 mt-4  ">
-                                      <button class="btn-bg-title-9 rounded-3  py-2">លុប</button>
-                                    </div>
+                                    <a href="#exampleModal" data-bs-toggle="modal"
+                                      class="btn w-100 btn-light d-flex shadow-sm">
+                                      <img src="assets/img/country-option/china.png"
+                                        class="rounded-circle me-3 object-fit-cover shadow-sm"
+                                        style="width: 40px; height: 40px;">
+                                      <div class="fs-3 fw-medium">
+                                        ចិន
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <a href="#exampleModal" data-bs-toggle="modal"
+                                      class="btn w-100 d-flex btn-light shadow-sm">
+                                      <img src="assets/img/country-option/687027.png"
+                                        class="rounded-circle me-3 object-fit-cover shadow-sm"
+                                        style="width: 40px; height: 40px;">
+                                      <div class="fs-3 fw-medium">
+                                        ជប៉ុន
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <a href="#exampleModal" data-bs-toggle="modal"
+                                      class="btn btn-light w-100 d-flex shadow-sm">
+                                      <img src="assets/img/country-option/south korea.webp"
+                                        class="rounded-circle me-3 object-fit-cover shadow-sm"
+                                        style="width: 40px; height: 40px;">
+                                      <div class="fs-3 fw-medium">
+                                        កូរ៉េ
+                                      </div>
+                                    </a>
                                   </div>
                                 </div>
                               </div>
@@ -224,81 +643,125 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-12">
-                        <div class="card border-0">
-                          <div class="card-body pb-0">
-                            <p class="fw-bold pb-0">ប្រវត្តិរូប និង​ អាសយដ្ឋាន</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="connection-tab-pane" role="tabpanel" aria-labelledby="connection-tab"
+                  tabindex="0">
+                  <div class="row g-0">
+                    <div class="col-12  ">
+                      <div class="card border-0 px-5 rounded-0 b-s p-3">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">ការកំណត់ការភ្ជាប់</h3>
+                                  <p class="text-black-50 pb-0">
+                                    លោកអ្នកអាចធ្វើការផ្លាស់ប្តូរការភ្ជាប់ផ្សេងបានដើម្បីដំណើរការគណនីឡើងវិញ
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <form class="row g-3 needs-validation" novalidate>
-                            <div class="col-md-6">
-                              <label for="validationCustom01" class="form-label">នាមត្រូកូ</label>
-                              <input type="text" class="form-control" id="validationCustom01" value="John" required>
-                              <div class="valid-feedback">
-                                Looks good!
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body pb-0">
+                                <p class="fw-bold pb-0">អ្នកកំពុងធ្វើការភ្ជាប់ជាមួយគណនី</p>
+                              </div>
+                              <div class=" mt-3 ms-3">
+                                <div class="d-flex gap-3">
+                                  <div class="d-flex">
+                                    <a href="#"
+                                      class="btn btn-secondary rounded-3 p-0 social-btn"
+                                      style="width: 38px; height: 38px;">
+                                      <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <p class="ms-2 fw-bold mt-1 text-primary">អ្នកបានភ្ជាប់
+                                    </p>
+                                  </div>
+                                  <div class="d-flex">
+                                    <a href="#"
+                                      class="btn btn-secondary rounded-3 p-0 social-btn"
+                                      style="width: 38px; height: 38px;">
+                                      <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <p class="ms-2 fw-bold mt-1 text-primary">អ្នកបានភ្ជាប់
+                                    </p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <label for="validationCustom02" class="form-label">នាមខ្លួន</label>
-                              <input type="text" class="form-control" id="validationCustom02" value="Doe" required>
-                              <div class="valid-feedback">
-                                Looks good!
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body pb-0">
+                                <p class="fw-bold pb-0">
+                                  អ្នកអាចផ្លាស់ប្តួរទៅគណនីថ្មីបានតាមរយៈដំណភ្ជាប់ខាងក្រោម</p>
+                              </div>
+                              <div class="ms-3 mt-3">
+                                <div class="d-flex  gap-3">
+                                  <a href="#"
+                                    class="btn btn-secondary rounded-3 p-0 social-btn"
+                                    style="width: 38px; height: 38px;">
+                                    <i class="fab fa-facebook-f"></i>
+                                  </a>
+                                  <a href="#"
+                                    class="btn btn-secondary rounded-3 p-0 social-btn"
+                                    style="width: 38px; height: 38px;">
+                                    <i class="fab fa-twitter"></i>
+                                  </a>
+                                  <a href="#"
+                                    class="btn btn-secondary rounded-3 p-0 social-btn"
+                                    style="width: 38px; height: 38px;">
+                                    <i class="fab fa-telegram"></i>
+                                  </a>
+                                  <a href="#"
+                                    class="btn btn-secondary rounded-3 p-0 social-btn"
+                                    style="width: 38px; height: 38px;">
+                                    <i class="fab fa-instagram"></i>
+                                  </a>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <label for="country" class="form-label">ជ្រើសរើស​ ប្រទេស</label>
-                              <select id="country" class="form-select " name="country" required>
-                                <option value="" disabled selected>Select your country
-                                </option>
-                                <option value="Afghanistan">Afghanistan</option>
-                                <option value="Albania">Albania</option>
-                                <option value="Algeria">Algeria</option>
-                                <option value="Andorra">Andorra</option>
-                                <option value="Angola">Angola</option>
-                                <option value="Antigua and Barbuda">Antigua and Barbuda
-                                </option>
-                                <option value="Argentina">Argentina</option>
-                                <option value="Armenia">Armenia</option>
-                                <option value="Cambodia">Cambodia</option>
-                                <option value="Comoros">Comoros</option>
-                                <option value="Costa Rica">Costa Rica</option>
-                                <option value="Croatia">Croatia</option>
-                                <option value="Vietnam">Vietnam</option>
-                                <option value="Yemen">Yemen</option>
-                                <option value="Zambia">Zambia</option>
-                                <option value="Zimbabwe">Zimbabwe</option>
-                              </select>
-                              <div class="invalid-feedback">
-                                Please select a valid state.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="delete-tab-pane" role="tabpanel" aria-labelledby="delete-tab"
+                  tabindex="0">
+                  <div class="row g-0">
+                    <div class="col-12  ">
+                      <div class="card border-0 px-5 rounded-0 b-s p-3">
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="card px-3 border-0 border-bottom rounded-0">
+                              <div class="card-body pb-0">
+                                <div class="title-account">
+                                  <h3 class="fw-bold">អ្នកអាចលុបគណនីរបស់បាន</h3>
+                                  <p class="text-black-50 pb-0">
+                                    នៅពេលលោកអ្នកលុបគណនី គណនីរបស់អ្នកនឹងមិនអាចយកមកវិញបានទេ
+                                  </p>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <label for="validationCustom03" class="form-label">ទីក្រុង</label>
-                              <input type="text" class="form-control" id="validationCustom03" required>
-                              <div class="invalid-feedback">
-                                Please provide a valid city.
+                          </div>
+                          <div class="col-12">
+                            <div class="card border-0">
+                              <div class="card-body pb-0">
+                                <h5 class="fw-bold pb-0 ">
+                                  មុននិងអ្នកធ្វើការលុបគណនីអ្នកអាចអានចំណុចខាងក្រោម</h5>
+                                <p>ការលុបគណនីនេះនឹងត្រូវបានលុបចេញពីគេហទំព័ររបស់ពួកយើងជាអចិន្ត្រៃយ៍
+                                  មិនអាចយកមកវិញបានឡើយ!</p>
+                                <div class="d-flex justify-content-start">
+                                  <button class="btn btn-danger px-5"
+                                    type="submit"  data-bs-toggle="modal" data-bs-target="#deleteModal">លុបគណនី</button>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <label for="validationCustom05" class="form-label">លេខ ទំនាក់ទំនង</label>
-                              <input type="tel" class="form-control" id="validationCustom05" value="" required>
-                              <div class="valid-feedback">
-                                Looks good!
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <label for="validationCustom06" class="form-label">Email
-                                address</label>
-                              <input type="tel" class="form-control" id="validationCustom06" value=""
-                                placeholder="name@example.com" required>
-                              <div class="valid-feedback">
-                                Looks good!
-                              </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                              <button class="btn btn-bg-title-1 me-3" type="button">បោះបង់</button>
-                              <button class="btn btn-bg-title-2 px-5" type="submit">រក្សាទុក​</button>
-                            </div>
-                          </form>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -311,6 +774,58 @@
       </div>
     </section>
   </main>
+
+  <!-- Language Modals -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            អ្នកអាចដាក់បញ្ជូលអក្សរទៅក្នុងប្រព័ន្ឋបាន</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+            data-bs-dismiss="modal">បោះបង់</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ដាក់
+            បញ្ជូន</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel-2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel-2">
+            អ្នកអាចដកអក្សរចេញពីក្នុងប្រព័ន្ឋបាន</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+            data-bs-dismiss="modal">បោះបង់</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ដក
+            ចេញ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Delete Modal -->
+  <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="deleteModalLabel">តើអ្នកសម្រាចចិត្តថានិងលុបគណនីរបស់អ្នកហើយមែនទេ</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"
+            data-bs-dismiss="modal">បោះបង់</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">លុបគណនី</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>

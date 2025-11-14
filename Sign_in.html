@@ -15,19 +15,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Glassmorphism CSS (optional) -->
     <link rel="stylesheet" href="From https://css.glass">
     <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap" rel="stylesheet">
 </head>
 
 <body class="img-background">
     <main>
-        <section class="">
+        <section >
             <div class="container">
                 <div class="sign-in-section mx-auto">
                     <div class="card-sign-in rounded-3 shadow-lg  position-relative">
-                        <div class="row g-0">
+                        <div class="row g-0 h-100">
                             <div class="col-12 col-lg-6 ">
                                 <div class="z-index card rounded-0 h-100  rounded-start-3 border-0  p-5  ">
                                     <div class=" mb-4 ">
@@ -40,29 +39,29 @@
                                     </div>
                                     <form class="sign-in">
                                         <div class="mb-3 position-relative">
+                                            <label for="email" class="visually-hidden">Email Address</label>
                                             <input type="email" class="form-control  p-2  blur-input"
-                                                placeholder="Email Address" required>
+                                                id="email" placeholder="Email Address" required>
                                             <i
                                                 class="fas fa-envelope position-absolute top-50 end-0 translate-middle-y me-3  text-muted"></i>
                                         </div>
                                         <div class="mb-3">
                                             <div class=" position-relative">
+                                                <label for="password" class="visually-hidden">Password</label>
                                                 <input type="password" id="password" placeholder="password"
                                                     class="form-control p-2  blur-input">
                                                 <i
                                                     class="fas fa-lock position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                                             </div>
                                             <div class="d-flex justify-content-between mt-2 ">
-                                                <div class="show-passwork">
-                                                    <button type="button"
-                                                        class="border-0 bg-transparent fs-6 text-black-50">
-                                                        <input id="togglePassword" type="checkbox"
-                                                            class="form-check-input fs-6 ">
-                                                        Show passwork</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="togglePassword">
+                                                    <label class="form-check-label small fs-6 text-muted" for="togglePassword">
+                                                        Show password
+                                                    </label>
                                                 </div>
                                                 <a href="#exampleModal" data-bs-toggle="modal"
-                                                    class=" fs-6 text-decoration-none text-color  ">forgot
-                                                    Password?</a>
+                                                    class="small text-decoration-none text-color">Forgot Password?</a>
                                             </div>
                                         </div>
                                         <button type="submit"
@@ -70,8 +69,8 @@
                                             In</button>
                                     </form>
                                     <div class="d-flex justify-content-between">
-                                        <p class="text-black-50">Don't have an account?</p>
-                                        <a href="signup.html" class="ms- text-decoration-none  text-color ">Sign up</a>
+                                        <p class="small text-muted mb-0">Don't have an account?</p>
+                                        <a href="signup.html" class="small text-decoration-none text-color fw-semibold">Sign up</a>
                                     </div>
                                     <div class="text-center mt-3">
                                         <p class="text-muted" style="font-size: 11px;">Or sign in with:</p>
@@ -220,19 +219,15 @@
     </main>
 
     <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script> AOS.init(); </script>
     <script>
         const togglePassword = document.querySelector("#togglePassword");
         const password = document.querySelector("#password");
 
-        togglePassword.addEventListener("click", function () {
+        togglePassword.addEventListener("change", function () {
             const type =
-                password.getAttribute("type") === "password" ? "text" : "password";
+                password.getAttribute("type") === "password" ? "text" : "password"; // Change type
             password.setAttribute("type", type);
-
-            this.classList.toggle("fa-eye");
-            this.classList.toggle("fa-eye-slash");
         });
     </script>
 
