@@ -13,95 +13,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="From https://css.glass">
+    <!-- Glassmorphism CSS (optional) -->
     <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap" rel="stylesheet">
 </head>
 
 <body class="img-background">
     <main>
-        <section class="">
+        <section class="my-5">
             <div class="container">
                 <div class="sign-in-section mx-auto">
-                    <div class="card-sign-in rounded-3 shadow-lg  position-relative">
+                    <div class="rounded-3 shadow-lg  position-relative">
                         <div class="row g-0">
                             <div class="col-12 col-lg-6 ">
-                                <div class="z-index card rounded-0 h-100  rounded-start-3 border-0  p-5  ">
-                                    <div class=" mb-4 ">
+                                <div class=" card rounded-0 bg-transparent rounded-start-3 border-0">
+                                    <div class="card-body " style="padding: 30px 30px 121px;">
                                         <div class="d-flex align-items-center justify-content-center gap-2">
                                             <i class="fas fa-compass text-color fs-5"></i>
                                             <span
                                                 class="text-color fw-bold fs-6 letter-spacing">ស្វែងរកកន្លែងកំសាន្ត</span>
                                         </div>
                                         <h2 class="mt-3 text-black fw-bold">Sign in to your account</h2>
-                                    </div>
-                                    <form class="sign-in">
-                                        <div class="mb-3 position-relative">
-                                            <input type="email" class="form-control  p-2  blur-input"
-                                                placeholder="Email Address" required>
-                                            <i
-                                                class="fas fa-envelope position-absolute top-50 end-0 translate-middle-y me-3  text-muted"></i>
-                                        </div>
-                                        <div class="mb-3">
-                                            <div class=" position-relative">
-                                                <input type="password" id="password" placeholder="password"
-                                                    class="form-control p-2  blur-input">
+                                        <form class="sign-in">
+                                            <div class="mb-3 position-relative mt-3">
+                                                <label for="email" class="visually-hidden">Email Address</label>
+                                                <input type="email" class="form-control  p-2  blur-input" id="email"
+                                                    placeholder="Email Address" required>
                                                 <i
-                                                    class="fas fa-lock position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
+                                                    class="fas fa-envelope position-absolute top-50 end-0 translate-middle-y me-3  text-muted"></i>
                                             </div>
-                                            <div class="d-flex justify-content-between mt-2 ">
-                                                <div class="show-passwork">
-                                                    <button type="button"
-                                                        class="border-0 bg-transparent fs-6 text-black-50">
-                                                        <input id="togglePassword" type="checkbox"
-                                                            class="form-check-input fs-6 ">
-                                                        Show passwork</button>
+                                            <div class="mb-3">
+                                                <div class=" position-relative">
+                                                    <label for="password" class="visually-hidden">Password</label>
+                                                    <input type="password" id="password" placeholder="password"
+                                                        class="form-control p-2  blur-input">
+                                                    <i
+                                                        class="fas fa-lock position-absolute top-50 end-0 translate-middle-y me-3 text-muted"></i>
                                                 </div>
-                                                <a href="#exampleModal" data-bs-toggle="modal"
-                                                    class=" fs-6 text-decoration-none text-color  ">forgot
-                                                    Password?</a>
+                                                <div class="d-flex justify-content-between mt-2 ">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="togglePassword">
+                                                        <label class="form-check-label small fs-6 text-muted"
+                                                            for="togglePassword">
+                                                            Show password
+                                                        </label>
+                                                    </div>
+                                                    <a href="#exampleModal" data-bs-toggle="modal"
+                                                        class="small text-decoration-none text-color">Forgot
+                                                        Password?</a>
+                                                </div>
                                             </div>
+                                            <button type="submit"
+                                                class="btn btn-bg text-white w-100 py-2 fw-semibold rounded-2 shadow-sm">Sign
+                                                In</button>
+                                        </form>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="small text-muted mb-0">Don't have an account?</p>
+                                            <a href="signup.html"
+                                                class="small text-decoration-none text-color fw-semibold">Sign up</a>
                                         </div>
-                                        <button type="submit"
-                                            class="btn btn-bg text-white w-100 py-2 fw-semibold rounded-2 shadow-sm">Sign
-                                            In</button>
-                                    </form>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-black-50">Don't have an account?</p>
-                                        <a href="signup.html" class="ms- text-decoration-none  text-color ">Sign up</a>
-                                    </div>
-                                    <div class="text-center mt-3">
-                                        <p class="text-muted" style="font-size: 11px;">Or sign in with:</p>
-                                        <div class="d-flex justify-content-center gap-3">
-                                            <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
-                                                style="width: 38px; height: 38px;">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
-                                                style="width: 38px; height: 38px;">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                            <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
-                                                style="width: 38px; height: 38px;">
-                                                <i class="fab fa-telegram"></i>
-                                            </a>
-                                            <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
-                                                style="width: 38px; height: 38px;">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
+                                        <div class="text-center mt-3">
+                                            <p class="text-muted" style="font-size: 11px;">Or sign in with:</p>
+                                            <div class="d-flex justify-content-center gap-3">
+                                                <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
+                                                    style="width: 38px; height: 38px;">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
+                                                    style="width: 38px; height: 38px;">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
+                                                    style="width: 38px; height: 38px;">
+                                                    <i class="fab fa-telegram"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-secondary rounded-circle p-0 social-btn"
+                                                    style="width: 38px; height: 38px;">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="img-bayon-1 col-lg-6">
-                                <div
-                                    class="card position-relative  border-0 rounded-0 rounded-end-3 text-white overflow-hidden">
-                                    <img src="assets/img/gate.jpg" alt="gate" class=" object-fit-cover img-sign-in">
-                                    <div class="title position-absolute  img-bayon ">
-                                        <h4>Angkor Thom Gate</h4>
+                            <div class="col-lg-6 img-bayon-1">
+                                <div class="card position-relative  border-0 rounded-0 rounded-end-3">
+                                    <img src="assets/img/bayon.jpg" alt="Bayon Temple"
+                                        class="object-fit-cover rounded-end-3" style="min-height: 550px;">
+                                    <div class="card-body position-absolute  text-white img-bayon ">
+                                        <h4>Bayon Temple</h4>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +169,7 @@
                         </div>
                         <div class="modal-footer d-flex justify-content-center border-0 gap-4">
                             <button type="submit" data-bs-target="#password-c" data-bs-toggle="modal"
-                               class="btn btn-dark  btn-lg">ផ្ទៀងផ្ទាត់​ OTP</button>
+                                class="btn btn-dark  btn-lg">ផ្ទៀងផ្ទាត់​ OTP</button>
                         </div>
                     </div>
                 </div>
@@ -211,7 +212,7 @@
                             </form>
                         </div>
                         <div class="modal-footer d-flex justify-content-center border-0 gap-4">
-                             <button type="button" class="btn btn-dark  btn-lg" data-bs-dismiss="modal">រក្សាទុក</button>
+                            <button type="button" class="btn btn-dark  btn-lg" data-bs-dismiss="modal">រក្សាទុក</button>
                         </div>
                     </div>
                 </div>
@@ -220,19 +221,15 @@
     </main>
 
     <script src="assets/Bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script> AOS.init(); </script>
+    <script> /* AOS.init(); */</script>
     <script>
         const togglePassword = document.querySelector("#togglePassword");
         const password = document.querySelector("#password");
 
-        togglePassword.addEventListener("click", function () {
+        togglePassword.addEventListener("change", function () {
             const type =
-                password.getAttribute("type") === "password" ? "text" : "password";
+                password.getAttribute("type") === "password" ? "text" : "password"; // Change type
             password.setAttribute("type", type);
-
-            this.classList.toggle("fa-eye");
-            this.classList.toggle("fa-eye-slash");
         });
     </script>
 
